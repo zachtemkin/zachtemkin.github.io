@@ -1,0 +1,233 @@
+.image-set {
+	margin: 2.5em auto;
+	> .project-image {
+		margin: 0 auto .25em;
+	}
+}
+
+.project-image {
+	max-width: 90%;
+	margin: 1.5em auto;
+	overflow: hidden;
+	@include breakpoint(screen-sm) {
+		max-width: 700px;
+		margin: 2.5em auto;
+	}
+	&.has-stroke {
+		.image-wrapper {
+			border: 1px solid #eaeaef;
+		}
+	}
+	.image-wrapper {
+		display: inline-block;
+		&.cdta {
+			background-color: $zt-blue-light;
+		}
+	}
+
+	&.project-image--one-up {
+		.image-wrapper {
+			display: inline-block;
+			&.iphone-disp {
+				position: relative;
+				height: 600px;
+				img {
+					position: absolute;
+					top: 0; right: 0; bottom: 0; left: 0;
+					margin: auto;
+					padding: 1em 0;
+					width: auto;
+					max-width: none;
+					max-height: 100%;
+				}
+			}
+		}
+		&.has-caption {
+			.image-wrapper {
+				width: 100%;
+				float: none;
+			}
+		}
+		.caption {
+			width: 75%;
+			margin-top: 0.5em;
+			padding: 0.5em 0 0 1em;
+			border-left: 3px solid $zt-red;
+			float: none;
+		}
+		&.feature {
+			@include breakpoint(screen-sm) {
+				width: 1080px;
+				max-width: 90%;
+			}
+			&.has-caption {
+				.image-wrapper {
+					@include breakpoint(screen-sm) {
+						width: 75%;
+						float: left;
+					}
+				}
+				.caption {
+					@include breakpoint(screen-sm) {
+						width: 24%;
+						margin-top: 0;
+						margin-left: 1%;
+						padding-left: 0.25em;
+						border-left: none;
+						border-top: 3px solid $zt-red;
+						float: left;
+					}
+				}
+			}
+		}
+	}
+
+	&.project-image--one-up-half {
+		.image-wrapper {
+			display: inline-block;
+			&.iphone-disp {
+				position: relative;
+				height: 600px;
+				img {
+					position: absolute;
+					top: 0; right: 0; bottom: 0; left: 0;
+					margin: auto;
+					padding: 1em 0;
+					border-top: 3px solid $zt-red;
+					width: auto;
+					max-width: none;
+					max-height: 100%;
+				}
+			}
+		}
+		&.has-caption {
+			.image-wrapper {
+				width: 50%;
+				float: left;
+			}
+		}
+		.caption {
+			width: 48%;
+			float: left;
+			margin-left: 2%;
+			padding: 1em;
+			border-top: 3px solid $zt-red;
+			background-color: #eaeaef;
+			color: darken(#eaeaef, 40%);
+		}
+	}
+
+	&.project-image--two-up {
+		&.has-stroke {
+			.image-wrapper {
+				border: none;
+				img {
+					display: block;
+					border: 1px solid #eaeaef;
+				}
+			}
+		}
+		.image-wrapper {
+			img  {
+				margin-bottom: 4px;
+			}
+			&.iphone-disp {
+				// display: block;
+				margin: 0 auto;
+				overflow: hidden;
+				img {
+					// display: block !important;
+					display: block;
+					width: auto;
+					height: 600px;
+					max-width: none;
+					max-height: 100%;
+					margin: 0 auto;
+					padding: 1em 0;
+					@include breakpoint(screen-sm) {
+						padding-left: 50px;
+						&:last-child {
+							padding-left: 0;
+							padding-right: 50px;
+							float: right;
+						}
+					}
+				}
+			}
+		}
+		@include breakpoint(screen-sm) {
+			img {
+				width: 49.5%;
+				&:not(:last-child) {
+					margin-right: 1%;
+				}
+				float: left;
+			}
+		}
+		&.has-caption {
+			@include breakpoint(screen-sm) {
+				max-width: 700px;
+			}
+			.image-wrapper {
+				width: 100%;
+				float: none;
+			}
+		}
+		.caption {
+			width: 75%;
+			margin-top: 0.5em;
+			padding: 0.5em 0 0 1em;
+			border-left: 3px solid $zt-red;
+			float: none;
+		}
+		&.feature {
+			@include breakpoint(screen-md) {
+				max-width: 1080px;
+			}
+			.caption {
+				width: 60%;
+			}
+		}
+	}
+
+	&.project-image--three-up {
+		@include breakpoint(screen-sm) {
+			img {
+				width: 33.333%;
+				float: left;
+			}
+		}
+		&.has-caption {
+			@include breakpoint(screen-sm) {
+				max-width: 700px;
+			}
+			.image-wrapper {
+				width: 100%;
+				float: none;
+			}
+		}
+		.caption {
+			width: 75%;
+			margin-top: 0.5em;
+			padding: 0.5em 0 0 1em;
+			border-left: 3px solid $zt-red;
+			float: none;
+		}
+		&.feature {
+			@include breakpoint(screen-sm) {
+				max-width: 1080px;
+			}
+			.caption {
+				width: 60%;
+			}
+		}
+	}
+	.caption {
+		> p {
+			@include font(primary);
+			margin: 0;
+			font-size: 1em;
+			color: darken(#eaeaef, 30%);
+		}
+	}
+}

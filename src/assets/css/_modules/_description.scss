@@ -1,0 +1,73 @@
+.description-container {
+	height: auto;
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+	font-size: 90%;
+	overflow: hidden;
+	@include breakpoint(screen-sm) {
+		font-size: 100%;
+		margin-bottom: 4.5em;
+		padding-bottom: 0;
+	}
+	@include breakpoint(screen-md) {
+		// width: 50%;
+		// margin-right: 3em;
+	}
+	.title {
+		width: 90%;
+		margin: 0 auto;
+		@include breakpoint(screen-md) {
+			width: 100%;
+			margin: 0;
+		}
+		h1 {
+			display: inline-block;
+			margin-top: 0;
+			margin-bottom: .375em;
+			padding-bottom: .25em;
+			font-size: 1.75em;
+			line-height: 100%;
+			font-weight: 700;
+			color: darken(#eaeaef, 50%);
+			border-bottom: 2px solid $zt-red;
+			em {
+				font-style: normal;
+			}
+			@include breakpoint(screen-sm) {
+				font-size: 2em;
+			}
+		}
+	}
+	p {
+		@include font(secondary);
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+		font-size: 1.125em;
+		line-height: 1.5em;
+		letter-spacing: 0.02em;
+		&:not(:last-of-type) {
+			margin-bottom: 1.25em;
+		}
+		@include breakpoint(screen-sm) {
+			line-height: 1.75em;
+		}
+		@include breakpoint(screen-md) {
+			width: 100%;
+		}
+		strong {
+			font-weight: 700;
+			font-style: normal;
+		}
+		em {
+			font-weight: inherit;
+			font-style: italic;
+		}
+		a {
+			color: $zt-red;
+			&:hover {
+				color: lighten($zt-red, 10%);
+			}
+		}
+	}
+}
