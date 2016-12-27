@@ -38,9 +38,8 @@ After some sketching and wire framing we were ready to make a proposal.
       
 ## The Proposal
 
-{% include blockquote %}
 > We re-imagined the CDTA website as a product, focused on utility, that would enable users to access the information they need most with as little friction as possible.
-        
+
 ### Home
 
 We designed the homepage with an emphasis on making the process of finding out when a specific bus will arrive at a specific stop as smooth and simple as possible.
