@@ -1,13 +1,13 @@
 ---
 layout: project
 title: "CDTA Mobile Experience"
+
 img: "assets/img/thumbnails/cdta-thumb.png"
-
 brief: "Redesign of the mobile web experience for the Capital District Transportation Authority."
-
 roles: "User interface design"
+
 date: 2016-12-25 19:40:49 -0500
-categories: portfolio project
+categories: portfolio cdta
 ---
 
 In the winter of 2013 I was recruited by Troy Web Consulting to help respond to a request for proposal for a redesign of the web experience for the Capital District Transportation Authority. I worked with one other designer, Trevor Phillippi and mostly owned work on the design of the mobile experience.

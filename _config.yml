@@ -12,3 +12,6 @@ source: src
 sass:
   sass_dir: ./assets/css
   style: compressed
+collections:
+  images:
+    output: true
