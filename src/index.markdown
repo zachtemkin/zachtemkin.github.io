@@ -4,7 +4,6 @@ layout: default
 
 <div class="inner">
 	{% include about.html %}
-
 	<ul class="project-container" id="work">
 		{% for post in site.posts %}
 			<li class="project">

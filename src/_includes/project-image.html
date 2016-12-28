@@ -1,0 +1,10 @@
+<div class="project-image project-image--{{ include.imgNum }} {% if include.caption %}has-caption{% endif %}">
+  <div class="image-wrapper">
+    <img data-original="{{ include.img }}" class="lazy" src="{{ include.img }}" style="display: inline-block;">
+  </div>
+  {% if include.caption %}
+  <div class="caption">
+    <p>{{ include.caption }}</p>
+  </div>
+  {% endif %}	
+</div>

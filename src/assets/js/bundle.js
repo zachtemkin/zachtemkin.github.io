@@ -46,16 +46,16 @@
 
 	// import React, { Component } from 'react';
 	// import {render} from 'react-dom';
-	// import Hello from './components/Hello';
+	// import ProjectImage from './components/ProjectImage';
+	// import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 
 	// class App extends Component {
-	//   render() {
-	//     return (
-	//       <Hello />
-	//     )
-	//   }
+	// 	render() {
+	// 		return (
+	// 			<ProjectImage />
+	// 		);
+	// 	}
 	// }
-
 	// render(<App />, document.getElementById('root'));
 	"use strict";
 

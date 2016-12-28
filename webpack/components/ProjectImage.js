@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
-class Hello extends Component {
+class ProjectImage extends React.Component {
   render() {
     return (
       <div>Hey, y’all!!</div>
     )
   }
 }
-export default Hello;
+
+export default ProjectImage;
