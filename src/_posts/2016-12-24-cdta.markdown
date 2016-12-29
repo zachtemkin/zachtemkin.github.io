@@ -1,14 +1,11 @@
 ---
 layout: project
 title: "CDTA Mobile Experience"
-project: "cdta"
-
 img: "assets/img/thumbnails/cdta-thumb.png"
 brief: "Redesign of the mobile web experience for the Capital District Transportation Authority."
 roles: "User interface design"
-
 date: 2016-12-25 19:40:49 -0500
-categories: portfolio cdta
+categories: portfolio
 ---
 
 In the winter of 2013 I was recruited by Troy Web Consulting to help respond to a request for proposal for a redesign of the web experience for the Capital District Transportation Authority. I worked with one other designer, Trevor Phillippi and mostly owned work on the design of the mobile experience.
@@ -52,7 +49,6 @@ The design maintains the basic organizational structure of the site as viewed on
 {% 
   include project-image-container.html
   nUp = "two-up"
-  isFeature = false
   wrapperClasses = "iphone-disp, cdta"
   caption = "We designed the homepage with an emphasis on making the process of finding out when a specific bus will arrive at a specific stop as smooth and simple as possible."
   images = "/assets/img/cdta/cdta-1.png, /assets/img/cdta/cdta-2.png"
@@ -62,6 +58,15 @@ The design maintains the basic organizational structure of the site as viewed on
 
 Once the user focuses in on the text field it is animated to the top of the screen, the background solidified and a list of all CDTA routes filled in. At this point the user could decide to type nothing in the field and scroll through the list to find the desired route or begin typing the route name or number which would filter the list based on relevance.
 
+{% 
+  include project-image-container.html
+  nUp = "one-up"
+  isFeature = false
+  wrapperClasses = "iphone-disp, cdta"
+  caption = "Once the user focuses in on the text field it is animated to the top of the screen, the background solidified and a list of all CDTA routes filled in."
+  images = "/assets/img/cdta/cdta-3.png"
+%}
+
 ### Next Bus View
 
 Once the user selects their route they are brought to this view, which is designed to most efficiently communicate to the user the information they are most interested in: how much time they have until the bus arrives at the stop they are at (or on their way to) and when the buses after that will come.
@@ -70,20 +75,55 @@ In order to reduce friction in the process of delivering this information, the s
 
 From the bottom of this page the user can access more general schedule information for weekdays and weekends.
 
+{% 
+  include project-image-container.html
+  nUp = "one-up"
+  isFeature = false
+  wrapperClasses = "iphone-disp, cdta"
+  caption = "Once the user selects their route they are brought to this view which is designed to most efficiently communicate to the user the information they are most interested in how much time they have until the bus arrives at the stop they are at or on their way to and when the buses after that will come."
+  images = "/assets/img/cdta/cdta-4.png"
+%}
+
 ### Selecting a Stop
 
 When the user taps on the name of the stop, a list of all the stops on that route is shown with the background greyed out to preserve the user&rsquo;s sense of place within the site.
 
+{% 
+  include project-image-container.html
+  nUp = "one-up"
+  isFeature = false
+  wrapperClasses = "iphone-disp, cdta"
+  caption = "When the user taps on the name of the stop, a list of all the stops on that route is shown with the background greyed out to preserve the user’s sense of place within the site."
+  images = "/assets/img/cdta/cdta-5.png"
+%}
 
 ### Schedule View Menu
 
 Some users may want to access more general schedule information for a future date or time. Tapping on &ldquo;Schedule View&rdquo; expands a menu giving the user access to schedule information for weekdays, Saturday and Sunday. We chose to give weekday schedules the label &ldquo;Mon - Fri&rdquo; as opposed to &ldquo;weekday&rdquo; to quickly differentiate it from &ldquo;weekend&rdquo;, because it is easier to map a range of days to the current day of the week and to keep the naming convention consistent i.e. naming the day instead of classifying it as weekend or weekday. This further reduces friction of use.
+
+{% 
+  include project-image-container.html
+  nUp = "one-up"
+  isFeature = false
+  wrapperClasses = "iphone-disp, cdta"
+  caption = "Some users may want to access more general schedule information for a future date or time. Tapping or clicking on “Schedule View” expands a menu giving the user access to schedule information for weekdays, Saturday and Sunday."
+  images = "/assets/img/cdta/cdta-6.png"
+%}
 
 ### Mon - Fri Schedule
 
 To provide users with the best experience of viewing schedules on a small device we knew we had to eschew traditional tables as they require too much imprecise pinching and swiping. At a given time users are generally only interested in a single specific stop-arrival time pairing.
 
 By collapsing the list of times at which a bus arrives at a stop under the name of the stop we streamlined the process of looking up arrival times, allowing the user to see all the arrivals for one stop at a time.
+
+{% 
+  include project-image-container.html
+  nUp = "one-up"
+  isFeature = false
+  wrapperClasses = "iphone-disp, cdta"
+  caption = "To provide users with the best experience of viewing schedules on a small device we knew we had to eschew traditional tables as they require too much imprecise pinching and swiping. At a given time users are generally only interested in a single specific stop-arrival time pairing."
+  images = "/assets/img/cdta/cdta-7.png"
+%}
 
 ## Conclusion
 

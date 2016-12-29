@@ -1,0 +1,38 @@
+---
+layout: project
+title: "Performance Tours"
+img: "assets/img/thumbnails/pt-thumb.png"
+brief: "Re-design of the logo for Performance Tours, a whitewater rafting tour company based in Colorado."
+roles: "visual design"
+---
+
+During the Summer of 2012 I was commissioned to re-design the logo for Performance Tours, a whitewater rafting tour company based in Colorado.
+
+I would have liked to do a complete re-branding however this wasn't in the client's budget.
+
+{%
+	include project-image-container.html
+	nUp = "one-up"
+	hasStroke = true
+	isFeature = true
+	caption = "This arrangement, which features the logo mark overlaid with an image of a wave could be used on screen-printed T-shirts or posters or signs."
+	images = "/assets/img/pt/ptmain.png"
+%}
+
+{%
+	include project-image-container.html
+	nUp = "three-up"
+	hasStroke = true
+	isFeature = true
+	caption = "The logo in various color settings."
+	images = "/assets/img/pt/ptlogo1.png, /assets/img/pt/ptlogo2.png, /assets/img/pt/ptlogo3.png"
+%}
+
+{%
+	include project-image-container.html
+	nUp = "one-up"
+	hasStroke = true
+	isFeature = true
+	caption = "Various concepts I presented to the client"
+	images = "/assets/img/pt/ptconcepts.png"
+%}
