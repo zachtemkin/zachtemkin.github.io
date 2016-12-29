@@ -1,0 +1,242 @@
+---
+layout: project
+title: "Component Test"
+img: "assets/img/logo.svg"
+brief: "Test display of various site components"
+roles: "QA yo"
+---
+
+# This is an H1
+
+## This is an H2
+
+### This is an H3
+
+This is a paragraph of hipster ipsum: Asymmetrical wayfarers locavore, readymade organic skateboard tacos authentic cray brunch. PBR&B semiotics vape schlitz polaroid. Fanny pack helvetica lomo, woke sustainable stumptown four loko plaid yuccie meggings butcher. Kale chips chambray subway tile letterpress craft beer. Neutra echo park readymade kinfolk enamel pin. Cardigan mumblecore dreamcatcher, narwhal migas pitchfork shabby chic mustache celiac meditation kogi pickled man braid gluten-free. Affogato hoodie tbh art party fixie everyday carry.
+
+{% 
+	include zt-button.html
+	dir = "left"
+	link = "#"
+	text = "Left"
+%}
+
+{% 
+	include zt-button.html
+	dir = "right"
+	link = "#"
+	text = "Right"
+%}
+
+{% 
+	include zt-button.html
+	dir = "up"
+	link = "#"
+	text = "Up"
+%}
+
+{% 
+	include zt-button.html
+	dir = "down"
+	link = "#"
+	text = "Down"
+%}
+
+> This is a fantastic blockquote of fantastic quote words
+
+### Unordered List
+
+- List item
+- List item
+- List item
+
+### Ordered List
+
+1. List item
+2. List item
+3. List item
+
+## Non-featured one, two and three up with background and iPhones
+
+### One-Up with background and iPhones and Caption
+
+{% 
+  include project-image-container.html
+  nUp = "one-up"
+  wrapperClasses = "iphone-disp, cdta"
+  caption = "We designed the homepage with an emphasis on making the process of finding out when a specific bus will arrive at a specific stop as smooth and simple as possible."
+  images = "/assets/img/cdta/cdta-1.png"
+%}
+
+### Two-Up with background and iPhones
+
+{% 
+  include project-image-container.html
+  nUp = "two-up"
+  wrapperClasses = "iphone-disp, cdta"
+  images = "/assets/img/cdta/cdta-1.png, /assets/img/cdta/cdta-2.png"
+%}
+
+### Three-Up with background and iPhones
+
+{% 
+  include project-image-container.html
+  nUp = "two-up"
+  wrapperClasses = "iphone-disp, cdta"
+  images = "/assets/img/cdta/cdta-1.png, /assets/img/cdta/cdta-2.png, /assets/img/cdta/cdta-3.png"
+%}
+
+## Featured one, two and three up with background and iPhones
+
+### Featured One-Up with background and iPhones and Caption
+
+{% 
+  include project-image-container.html
+  nUp = "one-up"
+  isFeature = true
+  wrapperClasses = "iphone-disp, cdta"
+  caption = "We designed the homepage with an emphasis on making the process of finding out when a specific bus will arrive at a specific stop as smooth and simple as possible."
+  images = "/assets/img/cdta/cdta-1.png"
+%}
+
+### Featured One-Up with background and iPhones no Caption
+
+{% 
+  include project-image-container.html
+  nUp = "one-up"
+  isFeature = true
+  wrapperClasses = "iphone-disp, cdta"
+  images = "/assets/img/cdta/cdta-1.png"
+%}
+
+### Featured Two-Up with background and iPhones and Caption
+
+{% 
+  include project-image-container.html
+  nUp = "two-up"
+  isFeature = true
+  wrapperClasses = "iphone-disp, cdta"
+  caption = "We designed the homepage with an emphasis on making the process of finding out when a specific bus will arrive at a specific stop as smooth and simple as possible."
+  images = "/assets/img/cdta/cdta-1.png, /assets/img/cdta/cdta-2.png"
+%}
+
+### Featured Two-Up with background and iPhones no Caption
+
+{% 
+  include project-image-container.html
+  nUp = "two-up"
+  isFeature = true
+  wrapperClasses = "iphone-disp, cdta"
+  images = "/assets/img/cdta/cdta-1.png, /assets/img/cdta/cdta-2.png"
+%}
+
+### Featured Three-Up with background and iPhones and Caption
+
+{% 
+  include project-image-container.html
+  nUp = "two-up"
+  isFeature = true
+  wrapperClasses = "iphone-disp, cdta"
+  caption = "We designed the homepage with an emphasis on making the process of finding out when a specific bus will arrive at a specific stop as smooth and simple as possible."
+  images = "/assets/img/cdta/cdta-1.png, /assets/img/cdta/cdta-2.png, /assets/img/cdta/cdta-3.png"
+%}
+
+### Featured Three-Up with background and iPhones no Caption
+
+{% 
+  include project-image-container.html
+  nUp = "two-up"
+  isFeature = true
+  wrapperClasses = "iphone-disp, cdta"
+  images = "/assets/img/cdta/cdta-1.png, /assets/img/cdta/cdta-2.png, /assets/img/cdta/cdta-3.png"
+%}
+
+<hr>
+
+## Non-featured one, two and three up
+
+### One-Up with Caption
+
+{% 
+  include project-image-container.html
+  nUp = "one-up"
+  caption = "We designed the homepage with an emphasis on making the process of finding out when a specific bus will arrive at a specific stop as smooth and simple as possible."
+  images = "/assets/img/iqube/iqube.png"
+%}
+
+### Two-Up with Caption 
+
+{% 
+  include project-image-container.html
+  nUp = "one-up"
+  caption = "We designed the homepage with an emphasis on making the process of finding out when a specific bus will arrive at a specific stop as smooth and simple as possible."
+  images = "/assets/img/iqube/iqube.png, /assets/img/iqube/iqube.png"
+%}
+
+### Three-Up with Caption
+
+{% 
+  include project-image-container.html
+  nUp = "one-up"
+  caption = "We designed the homepage with an emphasis on making the process of finding out when a specific bus will arrive at a specific stop as smooth and simple as possible."
+  images = "/assets/img/iqube/iqube.png, /assets/img/iqube/iqube.png, /assets/img/iqube/iqube.png"
+%}
+
+## Featured one, two and three up
+
+### Featured One-Up with Caption
+
+{% 
+  include project-image-container.html
+  nUp = "one-up"
+  isFeature = true
+  caption = "We designed the homepage with an emphasis on making the process of finding out when a specific bus will arrive at a specific stop as smooth and simple as possible."
+  images = "/assets/img/iqube/iqube.png"
+%}
+
+### Featured One-Up no Caption
+
+{% 
+  include project-image-container.html
+  nUp = "one-up"
+  isFeature = true
+  images = "/assets/img/iqube/iqube.png"
+%}
+
+### Featured Two-Up with Caption 
+
+{% 
+  include project-image-container.html
+  isFeature = true
+  nUp = "one-up"
+  caption = "We designed the homepage with an emphasis on making the process of finding out when a specific bus will arrive at a specific stop as smooth and simple as possible."
+  images = "/assets/img/iqube/iqube.png, /assets/img/iqube/iqube.png"
+%}
+
+### Featured Two-Up no Caption 
+
+{% 
+  include project-image-container.html
+  isFeature = true
+  nUp = "one-up"
+  images = "/assets/img/iqube/iqube.png, /assets/img/iqube/iqube.png"
+%}
+
+### Featured Three-Up with Caption
+
+{% 
+  include project-image-container.html
+  isFeature = true
+  nUp = "one-up"
+  caption = "We designed the homepage with an emphasis on making the process of finding out when a specific bus will arrive at a specific stop as smooth and simple as possible."
+  images = "/assets/img/iqube/iqube.png, /assets/img/iqube/iqube.png, /assets/img/iqube/iqube.png"
+%}
+
+### Featured Three-Up no Caption
+
+{% 
+  include project-image-container.html
+  isFeature = true
+  nUp = "one-up"
+  images = "/assets/img/iqube/iqube.png, /assets/img/iqube/iqube.png, /assets/img/iqube/iqube.png"
+%}
