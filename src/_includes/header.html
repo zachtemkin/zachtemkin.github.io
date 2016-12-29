@@ -1,6 +1,10 @@
 <header>
   <div class="inner">
-    <div class="logo-container"><a href="{{baseurl}}/"><img src="{{baseurl}}/assets/img/logo.svg"></a></div>
+    <div class="logo-container">
+      <a href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/img/logo.svg' | relative_url }}">
+      </a>
+    </div>
     <nav class="main-nav">
       <div class="menu-wrapper">
         <div class="menu">

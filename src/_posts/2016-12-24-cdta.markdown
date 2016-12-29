@@ -1,6 +1,7 @@
 ---
 layout: project
 title: "CDTA Mobile Experience"
+project: "cdta"
 
 img: "assets/img/thumbnails/cdta-thumb.png"
 brief: "Redesign of the mobile web experience for the Capital District Transportation Authority."
@@ -48,6 +49,14 @@ The design achieves this low level of friction by first orienting the user to th
 
 The design maintains the basic organizational structure of the site as viewed on a larger screen. Primary navigation is collapsed into a drop-down menu accessed by tapping or clicking on the plus in the upper right corner. Other links are collapsed into a list view. This content is prioritized based on how much the information could potentially impact a rider&rsquo;s actions.
 
+{% 
+  include project-image-container.html
+  nUp = "two-up"
+  isFeature = false
+  wrapperClasses = "iphone-disp, cdta"
+  caption = "We designed the homepage with an emphasis on making the process of finding out when a specific bus will arrive at a specific stop as smooth and simple as possible."
+  images = "/assets/img/cdta/cdta-1.png, /assets/img/cdta/cdta-2.png"
+%}
         
 ### Selecting a Route
 

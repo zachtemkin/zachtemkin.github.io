@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="project-container project-container--detail-page">
-	<a href="{{ base_url }}/#work" class="back back--top block-link slide slide--prev">Back</a>
+	<a href="{{ '/#work' | relative_url }}" class="back back--top block-link slide slide--prev">Back</a>
   
   <div class="title">
     <h1>{{ page.title }}</h1>
@@ -12,9 +12,11 @@ layout: default
   
   <div class="project-image project-image--one-up">
     <div class="image-wrapper cdta">
-	    <img src="{{baseurl}}/{{ page.img }}" alt="{{ page.title }}">
+	    <img src="{{ page.img | relative_url }}" alt="{{ page.title }}">
     </div>
   </div>
+  
   {{ content }}
-  <a href="{{ base_url }}/#work" class="back back--bottom block-link slide slide--prev">Back</a>
+
+  <a href="{{ '/#work' | relative_url }}" class="back back--bottom block-link slide slide--prev">Back</a>
 </div>

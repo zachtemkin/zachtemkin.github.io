@@ -8,14 +8,14 @@ layout: default
 		{% for post in site.posts %}
 			<li class="project">
 				<div class="img-wrapper">
-					<img src="{{ post.img | prepend: baseurl }}" alt="{{ post.title }}">
+					<img src="{{ post.img | relative_url }}" alt="{{ post.title }}">
 				</div>
 				<div class="info">
 					<h3>{{ post.title }}</h3>
 					<p class="brief">{{ post.brief }}</p>
 					<hr>
 					<p class="roles">{{ post.roles }}</p>
-					<a href="{{ post.url | prepend: baseurl }}" class="zt-button-link slide--next slide">MORE INFO</a>
+					<a href="{{ post.url | relative_url }}" class="zt-button-link slide--next slide">MORE INFO</a>
 				</div>
 			</li>
 		{% endfor %}
