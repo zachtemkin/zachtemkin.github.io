@@ -1,0 +1,70 @@
+@include reset;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $zt-purple;
+  color: $dark-gray;
+  height: 100%;
+  padding: 5px;
+  @include breakpoint(screen-sm) {
+    padding: 5px;
+  }
+}
+
+a {
+  color: $zt-red;
+  text-decoration: none;
+  transition: color .2s;
+
+  &:hover {
+    color: darken($cool-gray-light, 30%);
+  }
+}
+
+p {
+  color: darken($cool-gray-light, 60%);
+  // line-height: 150%;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+}
+
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.wrapper {
+  background-color: $white;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+footer {
+  border-bottom: 5px solid $zt-purple;
+}
+
+.inner {
+  @include clearfix;
+  margin: 0 auto;
+  width: 100%;
+  @include breakpoint(screen-md) {
+    max-width: 1280px;
+    width: 960px;
+  }
+}
+
+.project-container {
+  background-color: $zt-purple;
+  margin-top: 1.5em;
+  overflow: hidden;
+}

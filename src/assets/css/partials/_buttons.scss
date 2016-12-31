@@ -1,0 +1,96 @@
+.block-link {
+  background-color: $cool-gray-light;
+  color: darken($cool-gray-light, 45%);
+  font-size: 1.25em;
+  font-variant: small-caps;
+  font-weight: 600;
+  letter-spacing: .03em;
+  line-height: 1.25em;
+  margin: 0 15px 15px;
+  padding: 10px 15px 12px;
+  text-transform: lowercase;
+  transition: .3s all ease-in-out;
+  vertical-align: middle;
+
+  &:hover {
+    border-color: transparent;
+    color: rgba(darken(#eaeaef, 45%),0);
+  }
+}
+
+
+.slide {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    background-color: transparent;
+    color: darken($cool-gray-light, 55%);
+    display: block;
+    font-family: 'SSStandard';
+    font-size: 1em;
+    font-weight: 700;
+    padding: 10px 15px 12px;
+    position: absolute;
+    text-align: center;
+    transition: all .5s cubic-bezier(.215, .61, .355, 1);
+    width: 100%;
+  }
+
+  &.slide--prev {
+    &::after {
+      content: '\25c5';
+      font-size: 1em;
+      left: 100%;
+      line-height: 1.5em;
+      top: 0;
+    }
+  }
+
+  &.slide--next {
+    &::after {
+      content: '\25bb';
+      font-size: 1em;
+      left: -125px;
+      line-height: 1.5em;
+      opacity: 0;
+      top: 0;
+    }
+  }
+
+  &.slide--up {
+    &::after {
+      content: '\f500';
+      font-size: 1em;
+      left: 0;
+      line-height: 1.5em;
+      top: 100%;
+    }
+  }
+
+  &.slide--down {
+    &::after {
+      content: '\f501';
+      font-size: 1em;
+      left: 0;
+      line-height: 1.5em;
+      top: -100%;
+    }
+  }
+
+  &:hover {
+    &::after {
+      left: 0;
+      opacity: 1;
+      top: 0;
+    }
+  }
+
+  &:active {
+    &::after {
+      background: $dark-gray;
+      opacity: 1;
+    }
+  }
+}
