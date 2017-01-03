@@ -1,4 +1,5 @@
-.block-link {
+.zt-button {
+  @include font(san-serif);
   background-color: $cool-gray-light;
   color: darken($cool-gray-light, 45%);
   font-size: 1.25em;
@@ -6,8 +7,8 @@
   font-weight: 600;
   letter-spacing: .03em;
   line-height: 1.25em;
-  margin: 0 15px 15px;
   padding: 10px 15px 12px;
+  text-align: center;
   text-transform: lowercase;
   transition: .3s all ease-in-out;
   vertical-align: middle;
@@ -17,7 +18,6 @@
     color: rgba(darken(#eaeaef, 45%),0);
   }
 }
-
 
 .slide {
   display: inline-block;

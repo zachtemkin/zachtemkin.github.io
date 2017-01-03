@@ -10,9 +10,9 @@
 //font
 @mixin font($type) {
   @if $type == san-serif {
-    font: 16px/18px 'futura-pt', helvetica, arial, sans-serif;
+    font: 16px/1.4 'futura-pt', helvetica, arial, sans-serif;
   } @else if $type == serif {
-    font: 16px/18px 'ff-meta-serif-web-pro', georgia, times, serif;
+    font: 16px/1.4 'ff-meta-serif-web-pro', georgia, times, serif;
   }
 }
 

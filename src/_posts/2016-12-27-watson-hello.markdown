@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Watson Hello"
+title: "IBM – Watson Hello"
 img: "assets/img/thumbnails/ww-thumb.png"
 brief: "Showcase the value of Watson language processing APIs through a translation experience on a mobile device."
 roles: "Ux Design; Prototyping; User Research"
