@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Component Test"
-img: "assets/img/logo.svg"
+img: "assets/img/iqube/iqube.png"
 brief: "Test display of various site components"
 roles: "QA yo"
 ---

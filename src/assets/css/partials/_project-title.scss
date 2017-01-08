@@ -1,0 +1,29 @@
+.title {
+  @include content-column;
+  margin: 3.5em auto 1.5em;
+  text-align: center;
+
+  h1 {
+    border-bottom: 2px solid $zt-red;
+    display: inline-block;
+    width: 70%;
+
+    @include breakpoint(screen-sm) {
+      font-size: 2.75em;
+      width: auto;
+    }
+  }
+
+  > p {
+    @include font(secondary);
+    font-size: 1em;
+    font-style: italic;
+    margin: 0 auto .875em;
+    text-align: center;
+    width: 85%;
+
+    @include breakpoint(screen-sm) {
+      width: 70%;
+    }
+  }
+}

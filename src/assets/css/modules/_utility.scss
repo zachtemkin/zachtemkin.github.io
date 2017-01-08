@@ -7,6 +7,15 @@
   }
 }
 
+//layout 
+@mixin content-column {
+  max-width: 90%;
+
+  @include breakpoint(screen-sm) {
+    max-width: 700px;
+  }
+}
+
 //font
 @mixin font($type) {
   @if $type == san-serif {

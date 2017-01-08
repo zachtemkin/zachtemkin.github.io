@@ -2,13 +2,14 @@
 {% assign imageNames = imageNameStrs | split: ', ' %}
 {% assign classes = include.wrapperClasses | split: ', ' %}
 
-<div class="project-image project-image--{{ include.nUp }} {% if include.caption %}has-caption{% endif %} {% if include.isFeature %}feature{% endif %} {% if include.hasStroke %}has-stroke{% endif %}">
-  <div class="image-wrapper {% for class in classes %} {{ class }}{% endfor %}">
-	{% for image in imageNames %}
-		<img src="{{ image | relative_url }}">
-	{% endfor %}
+<div class="project-image-block {% if include.featured %}project-image-block--featured{% endif %} {% if include.side-caption %}project-image-block--side-caption{% endif %}">
+  <div class="images">
+    {% for image in imageNames %}
+    <div class="image-wrapper">
+  		<img src="{{ image | relative_url }}">
+    </div>
+    {% endfor %}
   </div>
-  
   {% if include.caption %}
   <div class="caption">
     <p>{{ include.caption }}</p>
