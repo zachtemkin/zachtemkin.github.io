@@ -17,40 +17,34 @@ Picto works on modern web browsers on desktop computers and mobile.
 
 {% 
   include project-image-container.html
-  nUp = "one-up"
   caption = "Once the site loads, the corners of the square flash to draw the user's attention and indicate clickability."
   images = "/assets/img/picto/pictoshot1.png"
 %}
 
 {% 
   include project-image-container.html
-  nUp = "one-up"
   caption = "'Picto' is displayed in a lighter color and hovering reveals the text can be changed."
   images = "/assets/img/picto/pictoshot2.png"
 %}
 
 {% 
   include project-image-container.html
-  nUp = "one-up"
   caption = "The user can make a shape and give it a name based on what they think it looks like."
   images = "/assets/img/picto/pictoshot4.png"
 %}
 
 {% 
   include project-image-container.html
-  nUp = "one-up"
   images = "/assets/img/picto/pictoshot5.png"
 %}
 
 {% 
   include project-image-container.html
-  nUp = "one-up"
   images = "/assets/img/picto/pictoshot6.png"
 %}
 
 {% 
   include project-image-container.html
-  nUp = "two-up"
   caption = "Because it is based on CSS3 transitions, Picto works on safari on iOS and other mobile browsers across platforms."
   images = "/assets/img/picto/pictophone1.png, /assets/img/picto/pictophone2.png"
 %}

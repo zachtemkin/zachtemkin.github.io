@@ -39,9 +39,7 @@ Coming from a design program where we’re always sharing ideas and often presen
 
 {%
 	include project-image-container.html
-	nUp = "one-up"
-	isFeature = true
-	wrapperClasses = ""
+	featured = true
 	caption = "We developed puzzle with two unrelated images that overlapped — one printed in red and the other in cyan. We asked two students, one with red tinted glasses and another with cyan tinted glasses to work together to put the pieces together."
 	images = "assets/img/iqube/puzzle/puzzle-setup.jpg"
 %}
@@ -52,27 +50,18 @@ We developed a puzzle that had two unrelated images that overlapped — one prin
 
 {%
 	include project-image-container.html
-	nUp = "one-up"
-	isFeature = false
-	wrapperClasses = ""
 	caption = "Looking through the cyan lens one can only see the image of the dinosaur printed in red."
 	images = "assets/img/iqube/puzzle/puzzle-complete-blue.jpg"
 %}
 
 {%
 	include project-image-container.html
-	nUp = "one-up"
-	isFeature = false
-	wrapperClasses = ""
 	caption = "Looking through the red lens one can only see the image of the submarine printed in cyan."
 	images = "assets/img/iqube/puzzle/puzzle-complete-red.jpg"
 %}
 
 {%
 	include project-image-container.html
-	nUp = "one-up"
-	isFeature = false
-	wrapperClasses = ""
 	caption = "Both participants need to work together to solve the middle of the puzzle where the images overlap."
 	images = "assets/img/iqube/puzzle/puzzle-complete.jpg"
 %}
@@ -93,8 +82,7 @@ We chose a cube because it was vaguely mathematical, was familiar and simple but
 
 {%
 	include project-image-container.html
-	nUp = "one-up"
-	isFeature = true
+	featured = true
 	caption = "We developed a prototype which utilized a small web-app that I built which was displayed on an iPhone in a cardboard box. Making use of the phone’s accelerometer students would tilt the box to reveal answers to a trivia question on the center of the screen."
 	images = "/assets/img/iqube/box.jpeg"
 %}
@@ -107,7 +95,6 @@ They seemed to have an intuitive understanding of tilt based controls and did se
 
 {%
 	include project-image-container.html
-	nUp = "one-up"
 	caption = "Screenshots from the trivia game we created. a question was displayed on one face and tilting the phone revealed possible answers on the other virtual faces. An answer is selected by tilting the cube such that the answer fills the whole screen. The screen flashes to show if an answer is correct."
 	images = "/assets/img/iqube/screens.png"
 %}
@@ -118,8 +105,7 @@ Our final prototype consisted of a 3D printed shell with 6 8x8 LED matrices of v
 
 {%
 	include project-image-container.html
-	nUp = "one-up"
-	isFeature = true
+	featured = true
 	caption = "Our final prototype consisted of a 3D printed shell with 6 8x8 LED matrices of varying color and an accelerometer/gyroscope chip. Each screen displayed a shape and rotating the cube rotated the shape facing up relative to the user."
 	images = "/assets/img/iqube/iqube.png"
 %}
@@ -128,7 +114,6 @@ My partner built the prototype and I programed the Arduino chip that powered it.
 
 {%
 	include project-image-container.html
-	nUp = "one-up"
 	caption = "The guts of the iQube — testing three of our screens"
 	images = "/assets/img/iqube/iqube-guts.jpeg"
 %}

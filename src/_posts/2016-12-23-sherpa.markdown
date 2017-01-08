@@ -26,9 +26,6 @@ The design of Sherpa makes use of type-aheads and prompts that use natural langu
 
 {% 
   include project-image-container.html
-  nUp = "one-up"
-  isFeature = false
-  wrapperClasses = ""
   caption = "The landing page features a prompt asking the user to input a school they are interested in. A type-ahead then appears based on the entered text, suggesting schools that are in the system."
   images = "/assets/img/sherpa/sherp-01.png"
 %}
@@ -39,9 +36,7 @@ Once the user selects a school, they are taken to a page listing all of the acti
 
 {% 
   include project-image-container.html
-  nUp = "two-up"
-  isFeature = true
-  wrapperClasses = ""
+  featured = true
   caption = "The user provides information about themselves in the form of tags which are matched against sherpa's information in order to filter the list and provide a good match for the user. The user can also change schools directly from this view."
   images = "/assets/img/sherpa/sherp-02.png, /assets/img/sherpa/sherp-04.png"
 %}
@@ -56,10 +51,6 @@ Besides filtering sherpas based on interest, a user can use the menus on the lef
 
 {% 
   include project-image-container.html
-  nUp = "one-up"
-  isFeature = false
-  hasStroke = true
-  wrapperClasses = ""
   caption = "In this view users book a date and time for their sherpa meeting."
   images = "/assets/img/sherpa/sherp-03.png"
 %}

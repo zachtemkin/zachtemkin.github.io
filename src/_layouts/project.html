@@ -10,6 +10,11 @@ layout: default
     <p>{{ page.brief }}</p>
   </div>
 
+  {% 
+    include project-image-container.html
+    images = page.img
+  %}
+
   {{ content }}
 
   <a href="{{ '/#work' | relative_url }}" class="zt-button zt-button--back back--bottom slide slide--prev">Back</a>

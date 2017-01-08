@@ -36,11 +36,16 @@
 }
 
 .images {
+  // background-color: $zt-blue-light;
+  text-align: center;
+
   @include breakpoint(screen-sm) {
     display: flex;
   }
 
   .image-wrapper {
+    border: 1px solid $cool-gray-light;
+    text-align: center;
     width: 100%;
 
     &:not(:last-child) {
