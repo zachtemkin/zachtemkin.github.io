@@ -36,7 +36,6 @@
 }
 
 .images {
-  // background-color: $zt-blue-light;
   text-align: center;
 
   @include breakpoint(screen-sm) {
@@ -56,6 +55,14 @@
         margin-bottom: 0;
         margin-right: .25rem;
       }
+    }
+  }
+
+  &--has-background {
+    background-color: $zt-blue-light;
+
+    .image-wrapper {
+      border: 0;
     }
   }
 }

@@ -10,34 +10,37 @@ categories: portfolio
 
 In the winter of 2012 I was asked by some friends to create concept art for Mountain the Game, a computer game about a journey from the big city to the top of a mystical mountain. Development is currently in hiatus.
 
-<div class="image-set">
-	{% 
-	  include project-image-container.html
-	  images = "/assets/img/mountain/street1.png"
-	%}
+{%
+	include project-image-container.html
+	images = "/assets/img/mountain/mountaintitle.png"
+%}
 
-	{% 
-	  include project-image-container.html
-	  images = "/assets/img/mountain/street2.png"
-	%}
+{% 
+  include project-image-container.html
+  images = "/assets/img/mountain/patch.png, /assets/img/mountain/dudewithdog.png"
+%}
 
-	{% 
-	  include project-image-container.html
-	  images = "/assets/img/mountain/street3.png"
-	%}
+{% 
+  include project-image-container.html
+  images = "/assets/img/mountain/dog.gif, /assets/img/mountain/dudewalk.gif"
+%}
 
-	{% 
-	  include project-image-container.html
-	  images = "/assets/img/mountain/trees.png"
-	%}
+{% 
+  include project-image-container.html
+  images = "/assets/img/mountain/street1.png"
+%}
 
-	{% 
-	  include project-image-container.html
-	  images = "/assets/img/mountain/patch.png, /assets/img/mountain/dudewithdog.png"
-	%}
+{% 
+  include project-image-container.html
+  images = "/assets/img/mountain/street2.png"
+%}
 
-	{% 
-	  include project-image-container.html
-	  images = "/assets/img/mountain/dog.gif, /assets/img/mountain/dudewalk.gif"
-	%}
-</div>
+{% 
+  include project-image-container.html
+  images = "/assets/img/mountain/street3.png"
+%}
+
+{% 
+  include project-image-container.html
+  images = "/assets/img/mountain/trees.png"
+%}

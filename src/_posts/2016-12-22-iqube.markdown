@@ -40,6 +40,7 @@ Coming from a design program where we’re always sharing ideas and often presen
 {%
 	include project-image-container.html
 	featured = true
+	side-caption = true
 	caption = "We developed puzzle with two unrelated images that overlapped — one printed in red and the other in cyan. We asked two students, one with red tinted glasses and another with cyan tinted glasses to work together to put the pieces together."
 	images = "assets/img/iqube/puzzle/puzzle-setup.jpg"
 %}
@@ -83,6 +84,7 @@ We chose a cube because it was vaguely mathematical, was familiar and simple but
 {%
 	include project-image-container.html
 	featured = true
+	side-caption = true
 	caption = "We developed a prototype which utilized a small web-app that I built which was displayed on an iPhone in a cardboard box. Making use of the phone’s accelerometer students would tilt the box to reveal answers to a trivia question on the center of the screen."
 	images = "/assets/img/iqube/box.jpeg"
 %}
@@ -106,6 +108,7 @@ Our final prototype consisted of a 3D printed shell with 6 8x8 LED matrices of v
 {%
 	include project-image-container.html
 	featured = true
+	side-caption = true
 	caption = "Our final prototype consisted of a 3D printed shell with 6 8x8 LED matrices of varying color and an accelerometer/gyroscope chip. Each screen displayed a shape and rotating the cube rotated the shape facing up relative to the user."
 	images = "/assets/img/iqube/iqube.png"
 %}
