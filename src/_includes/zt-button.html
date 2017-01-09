@@ -1,1 +1,20 @@
-<a href="{{ include.link }}" class="zt-button slide {% case include.dir %}{% when 'left' %}slide--prev{% when 'right' %}slide--next{% when 'down' %}slide--down{% when 'up' %}slide--up{% else %}slide--next{% endcase %}">{{ include.text }}</a>
+{% if include.relUrl %}
+	{% assign url = include.link | relative_url %}
+{% else %}
+	{% assign url = include.link %}
+{% endif %}
+
+{% case include.dir %}
+	{% when 'left' %}
+		{% assign directionSubClass = "slide-button--left" %}
+	{% when 'right' %}
+		{% assign directionSubClass = "slide-button--right" %}
+	{% when 'down' %}
+		{% assign directionSubClass = "slide-button--down" %}
+	{% when 'up' %}
+		{% assign directionSubClass = "slide-button--up" %}
+	{% else %}
+		{% assign directionSubClass = "slide-button--right" %}
+{% endcase %}
+
+<a href="{{ url }}" class="zt-button slide-button {{ directionSubClass }} {% if include.featured %}slide-button--featured{% endif %}">{{ include.text }}</a>

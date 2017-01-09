@@ -1,11 +1,22 @@
 ---
 layout: project
 title: "Component Test"
-photo-img: true
 img: "assets/img/logo.svg"
+imgBg: true
+appendix:
+- {link: "/assets/CDTA-analysis.pdf", rel: true, text: "This is a link"}
+- {link: "http://facebook.com", text: "This is a link to Facebook"}
 brief: "Test display of various site components"
 roles: "QA yo"
 ---
+{% describe %}
+	- {link: "/assets/img/cdta/cdta-1.png", rel: true, text: "foo"}
+	- {link: "/assets/img/cdta/cdta-2.png", rel: true, text: "bar"}
+{% enddescribe %}
+
+{% for item in page.description %}
+	{{ item | inspect }}
+{% endfor %}
 
 # This is an H1
 

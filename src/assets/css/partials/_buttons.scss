@@ -10,23 +10,22 @@
   padding: 10px 15px 12px;
   text-align: center;
   text-transform: lowercase;
-  transition: .3s all ease-in-out;
+  transition: .3s color ease-in-out;
   vertical-align: middle;
 
   &:hover {
-    border-color: transparent;
-    color: rgba(darken(#eaeaef, 45%),0);
+    color: $transparent;
   }
 }
 
-.slide {
+.slide-button {
   display: inline-block;
   overflow: hidden;
   position: relative;
 
   &::after {
     background-color: transparent;
-    color: darken($cool-gray-light, 55%);
+    color: $cool-gray-med;
     display: block;
     font-family: 'SSStandard';
     font-size: 1em;
@@ -34,11 +33,17 @@
     padding: 10px 15px 12px;
     position: absolute;
     text-align: center;
-    transition: all .5s cubic-bezier(.215, .61, .355, 1);
+    // transition: positoin .5s cubic-bezier(.215, .61, .355, 1);
     width: 100%;
   }
 
-  &.slide--prev {
+  &--featured {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--left {
     &::after {
       content: '\25c5';
       font-size: 1em;
@@ -48,7 +53,7 @@
     }
   }
 
-  &.slide--next {
+  &--right {
     &::after {
       content: '\25bb';
       font-size: 1em;
@@ -59,7 +64,7 @@
     }
   }
 
-  &.slide--up {
+  &--up {
     &::after {
       content: '\f500';
       font-size: 1em;
@@ -69,7 +74,7 @@
     }
   }
 
-  &.slide--down {
+  &--down {
     &::after {
       content: '\f501';
       font-size: 1em;

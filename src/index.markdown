@@ -15,7 +15,13 @@ layout: default
 				<p class="brief">{{ post.brief }}</p>
 				<hr>
 				<p class="roles">{{ post.roles }}</p>
-				<a href="{{ post.url | relative_url }}" class="zt-button slide--next slide">MORE INFO</a>
+				{%
+					include zt-button.html
+					dir = "right"
+					link = post.url
+					relUrl = true
+					text = "MORE INFO"
+				%}
 			</div>
 		</li>
 		{% endfor %}

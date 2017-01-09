@@ -3,13 +3,30 @@ layout: default
 ---
 
 <div class="project-content">
-	<a href="{{ '/#work' | relative_url }}" class="zt-button zt-button--back back--top slide slide--prev">Back</a>
-  
+	{%
+    include zt-button.html
+    dir = "left"
+    text = "home"
+    link = "/#work"
+    relUrl = true
+    featured = true
+  %}
+
   <div class="title">
     <h1>{{ page.title }}</h1>
     <p>{{ page.brief }}</p>
+    {% if page.appendix %}
+      {% for item in page.appendix %}
+        {%
+          include zt-button.html
+          text = item.text
+          link = item.link
+          relUrl = item.rel
+        %}
+      {% endfor %}
+    {% endif %}
   </div>
-
+  
   {% 
     include project-image-container.html
     images = page.img
@@ -18,5 +35,12 @@ layout: default
 
   {{ content }}
 
-  <a href="{{ '/#work' | relative_url }}" class="zt-button zt-button--back back--bottom slide slide--prev">Back</a>
+  {%
+    include zt-button.html
+    dir = "left"
+    text = "home"
+    link = "/#work"
+    relUrl = true
+    featured = true
+  %}
 </div>
