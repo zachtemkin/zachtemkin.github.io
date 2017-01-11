@@ -24,14 +24,8 @@ This is a paragraph of hipster ipsum: Asymmetrical wayfarers locavore, readymade
 	include zt-button.html
 	dir = "left"
 	link = "#"
-	text = "Left"
-%}
-
-{% 
-	include zt-button.html
-	dir = "right"
-	link = "#"
-	text = "Right"
+	text = "Left super long string"
+	featured = true
 %}
 
 {% 
@@ -39,6 +33,15 @@ This is a paragraph of hipster ipsum: Asymmetrical wayfarers locavore, readymade
 	dir = "up"
 	link = "#"
 	text = "Up"
+	featured = true
+%}
+
+{% 
+	include zt-button.html
+	dir = "right"
+	link = "#"
+	text = "Right"
+	featured = true
 %}
 
 {% 
@@ -46,6 +49,7 @@ This is a paragraph of hipster ipsum: Asymmetrical wayfarers locavore, readymade
 	dir = "down"
 	link = "#"
 	text = "Down"
+	featured = true
 %}
 
 > This is a fantastic blockquote of fantastic quote words. This is a fantastic blockquote of fantastic quote words.

@@ -23,6 +23,12 @@
   overflow: hidden;
   position: relative;
 
+  &--featured {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   &::after {
     background-color: transparent;
     color: $cool-gray-med;
@@ -30,71 +36,80 @@
     font-family: 'SSStandard';
     font-size: 1em;
     font-weight: 700;
+    line-height: 1.5em;
     padding: 10px 15px 12px;
     position: absolute;
     text-align: center;
-    // transition: positoin .5s cubic-bezier(.215, .61, .355, 1);
+    transition: all .5s cubic-bezier(.215, .61, .355, 1);
     width: 100%;
-  }
-
-  &--featured {
-    display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   &--left {
     &::after {
       content: '\25c5';
-      font-size: 1em;
-      left: 100%;
-      line-height: 1.5em;
+      left: 50%;
       top: 0;
+      transform: translateX(0);
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+        transform: translateX(-50%);
+      }
     }
   }
 
   &--right {
     &::after {
       content: '\25bb';
-      font-size: 1em;
-      left: -125px;
-      line-height: 1.5em;
-      opacity: 0;
+      right: 50%;
       top: 0;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+        transform: translateX(50%);
+      }
     }
   }
 
   &--up {
     &::after {
       content: '\f500';
-      font-size: 1em;
-      left: 0;
-      line-height: 1.5em;
-      top: 100%;
+      left: 50%;
+      top: 80%;
+      transform: translateX(-50%);
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-70%);
+      }
     }
   }
 
   &--down {
     &::after {
+      bottom: 64%;
       content: '\f501';
-      font-size: 1em;
-      left: 0;
-      line-height: 1.5em;
-      top: -100%;
+      left: 50%;
+      transform: translateX(-50%);
     }
-  }
 
-  &:hover {
-    &::after {
-      left: 0;
-      opacity: 1;
-      top: 0;
+    &:hover {
+      &::after {
+        opacity: 1;
+        transform: translateX(-50%) translateY(70%);
+      }
     }
   }
 
   &:active {
+    background-color: darken($cool-gray-light, 10%);
     &::after {
-      background: $dark-gray;
       opacity: 1;
     }
   }
