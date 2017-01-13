@@ -1,6 +1,7 @@
 ---
 layout: project
 title: "Picto"
+ID: "picto"
 img: "assets/img/thumbnails/picto-thumb.png"
 brief: "An experiment on meditative play, users click or touch each of the four quadrants of a square to change the shape of that quadrant and make a new shape out of the whole. The shapes that can be made are simple yet very interpretive."
 roles: "Design; Front-end development"

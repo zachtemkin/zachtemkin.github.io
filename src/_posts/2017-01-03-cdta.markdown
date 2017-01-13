@@ -1,11 +1,11 @@
 ---
 layout: project
 title: "CDTA Mobile Experience"
+ID: "cdta"
 img: "assets/img/thumbnails/cdta-thumb.png"
 imgBg: true
 brief: "Redesign of the mobile web experience for the Capital District Transportation Authority."
 roles: "User interface design"
-date: 2016-12-25 19:40:49 -0500
 categories: portfolio
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: project
 title: "Component Test"
+ID: "test"
 img: "assets/img/logo.svg"
 imgBg: true
 appendix:
@@ -21,35 +22,35 @@ Usually you don't have an H1 in a project page because you have a title but if y
 This is a paragraph of hipster ipsum: Asymmetrical wayfarers locavore, readymade organic skateboard tacos authentic cray brunch. PBR&B semiotics vape schlitz polaroid. Fanny pack helvetica lomo, woke sustainable stumptown four loko plaid yuccie meggings butcher. Kale chips chambray subway tile letterpress craft beer. Neutra echo park readymade kinfolk enamel pin. Cardigan mumblecore dreamcatcher, narwhal migas pitchfork shabby chic mustache celiac meditation kogi pickled man braid gluten-free. Affogato hoodie tbh art party fixie everyday carry.
 
 {% 
-	include zt-button.html
-	dir = "left"
-	link = "#"
-	text = "Left super long string"
-	featured = true
+  include zt-button.html
+  dir = "left"
+  link = "#"
+  text = "Left super long string"
+  featured = true
 %}
 
 {% 
-	include zt-button.html
-	dir = "up"
-	link = "#"
-	text = "Up"
-	featured = true
+  include zt-button.html
+  dir = "up"
+  link = "#"
+  text = "Up"
+  featured = true
 %}
 
 {% 
-	include zt-button.html
-	dir = "right"
-	link = "#"
-	text = "Right"
-	featured = true
+  include zt-button.html
+  dir = "right"
+  link = "#"
+  text = "Right"
+  featured = true
 %}
 
 {% 
-	include zt-button.html
-	dir = "down"
-	link = "#"
-	text = "Down"
-	featured = true
+  include zt-button.html
+  dir = "down"
+  link = "#"
+  text = "Down"
+  featured = true
 %}
 
 > This is a fantastic blockquote of fantastic quote words. This is a fantastic blockquote of fantastic quote words.
@@ -84,3 +85,5 @@ Neutra echo park readymade kinfolk enamel pin. Cardigan mumblecore dreamcatcher,
   images = "/assets/img/cdta/cdta-1.png, /assets/img/cdta/cdta-1.png, /assets/img/cdta/cdta-1.png"
   side-caption = true
 %}
+
+

@@ -114,3 +114,9 @@
     }
   }
 }
+
+.multi-button-container {
+  @include content-column;
+  margin: 0 auto;
+  text-align: center;
+}

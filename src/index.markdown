@@ -5,8 +5,8 @@ layout: default
 <div class="inner">
 	{% include about.html %}
 	<ul class="project-list" id="work">
-		{% for post in site.posts %}
-		<li class="project-preview">
+		{% for post in site.posts reversed %}
+		<li class="project-preview" id="{{ post.ID }}">
 			<div class="img-wrapper {% if post.photo-img %}img-wrapper--photo-img{% endif %}">
 				<img src="{{ post.img | relative_url }}" alt="{{ post.title }}">
 			</div>
