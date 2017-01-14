@@ -55,39 +55,29 @@
 
   blockquote {
     @include content-column;
-    background-color: $cool-gray-light;
-    border: 0;
+    border-bottom: 1px solid $cool-gray-light;
+    border-top: 1px solid $cool-gray-light;
     margin: 1.5em auto;
     padding: 1.5em 3.5em;
     position: relative;
 
     > p {
       @include font(primary);
+      color: $cool-gray-med;
       font-size: 1.25em;
-      font-style: italic;
       line-height: 1.6;
       margin: 0;
-    }
-
-    &::before,
-    &::after {
-      @include font(serif);
-      color: $zt-red;
-      font-size: 2.5rem;
-      height: 25%;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      max-width: 100%;
     }
 
     &::before {
+      @include font(serif);
+      color: $zt-red;
       content: '\201c';
-      left: .5em;
-    }
-
-    &::after {
-      content: '\201d';
-      right: .5em;
+      font-size: 4rem;
+      left: 0;
+      position: absolute;
+      top: 0;
     }
   }
 

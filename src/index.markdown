@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="inner">
-	{% include about.html %}
+	{% include site-description.html %}
 	<ul class="project-list" id="work">
 		{% for post in site.posts reversed %}
 		<li class="project-preview" id="{{ post.ID }}">
