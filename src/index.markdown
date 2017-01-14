@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="inner">
 	{% include site-description.html %}
 	<ul class="project-list" id="work">

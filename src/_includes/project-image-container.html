@@ -4,7 +4,7 @@
   <div class="images {% if include.hasBackground %}images--has-background{% endif %}">
     {% for image in imageNames %}
     <div class="image-wrapper">
-  		<img src="{{ image | relative_url }}">
+  		<img class="lazy" data-original="{{ image | relative_url }}">
     </div>
     {% endfor %}
   </div>
