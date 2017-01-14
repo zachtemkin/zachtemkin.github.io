@@ -6,6 +6,7 @@ img: "/assets/img/thumbnails/pt-thumb.png"
 photo-img: true
 brief: "Re-design of the logo for Performance Tours, a whitewater rafting tour company based in Colorado."
 roles: "visual design"
+categories: portfolio
 ---
 
 During the Summer of 2012 I was commissioned to re-design the logo for Performance Tours, a whitewater rafting tour company based in Colorado.

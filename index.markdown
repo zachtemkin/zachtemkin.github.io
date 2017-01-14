@@ -5,6 +5,7 @@ layout: default
 	{% include site-description.html %}
 	<ul class="project-list" id="work">
 		{% for post in site.posts reversed %}
+		{% if post.categories contains 'portfolio' %}
 		<li class="project-preview" id="{{ post.ID }}">
 			<div class="img-wrapper {% if post.photo-img %}img-wrapper--photo-img{% endif %}">
 				<img src="{{ post.img | prepend: site.github.url }}" alt="{{ post.title }}">
@@ -23,6 +24,7 @@ layout: default
 				%}
 			</div>
 		</li>
+		{% endif %}
 		{% endfor %}
 	</ul>
 </div>
