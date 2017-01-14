@@ -2,7 +2,7 @@
 layout: project
 title: "CDTA Mobile Experience"
 ID: "cdta"
-img: "assets/img/thumbnails/cdta-thumb.png"
+img: "/assets/img/thumbnails/cdta-thumb.png"
 imgBg: true
 brief: "Redesign of the mobile web experience for the Capital District Transportation Authority."
 roles: "User interface design"

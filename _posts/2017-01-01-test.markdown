@@ -2,7 +2,7 @@
 layout: project
 title: "Component Test"
 ID: "test"
-img: "assets/img/logo.svg"
+img: "/assets/img/logo.svg"
 imgBg: true
 appendix:
 - {link: "/assets/CDTA-analysis.pdf", rel: true, text: "This is a link"}
