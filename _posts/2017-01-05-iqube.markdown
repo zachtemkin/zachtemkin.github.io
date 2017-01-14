@@ -43,7 +43,7 @@ Coming from a design program where we’re always sharing ideas and often presen
 	featured = true
 	side-caption = true
 	caption = "We developed puzzle with two unrelated images that overlapped — one printed in red and the other in cyan. We asked two students, one with red tinted glasses and another with cyan tinted glasses to work together to put the pieces together."
-	images = "assets/img/iqube/puzzle/puzzle-setup.jpg"
+	images = "/assets/img/iqube/puzzle/puzzle-setup.jpg"
 %}
 
 Informed by our first interview with the students, we wanted to create something that got them interacting with one another and challenged them to work together and communicate.
@@ -53,19 +53,19 @@ We developed a puzzle that had two unrelated images that overlapped — one prin
 {%
 	include project-image-container.html
 	caption = "Looking through the cyan lens one can only see the image of the dinosaur printed in red."
-	images = "assets/img/iqube/puzzle/puzzle-complete-blue.jpg"
+	images = "/assets/img/iqube/puzzle/puzzle-complete-blue.jpg"
 %}
 
 {%
 	include project-image-container.html
 	caption = "Looking through the red lens one can only see the image of the submarine printed in cyan."
-	images = "assets/img/iqube/puzzle/puzzle-complete-red.jpg"
+	images = "/assets/img/iqube/puzzle/puzzle-complete-red.jpg"
 %}
 
 {%
 	include project-image-container.html
 	caption = "Both participants need to work together to solve the middle of the puzzle where the images overlap."
-	images = "assets/img/iqube/puzzle/puzzle-complete.jpg"
+	images = "/assets/img/iqube/puzzle/puzzle-complete.jpg"
 %}
 
 We were glad to see that this exercise inspired a lot of talking and team work (and that the kids were actually entertained). In some cases one student took more of a lead but even then there were points were they came together. This exercise taught us a lot about the way the students engage with problems and with their peers to solve them. It seemed that in the context of play the students were much less reserved about trying problems that they weren’t sure they could solve than when in the classroom proper.
