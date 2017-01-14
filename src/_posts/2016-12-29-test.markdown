@@ -74,9 +74,10 @@ Neutra echo park readymade kinfolk enamel pin. Cardigan mumblecore dreamcatcher,
 
 ## Images with background and iPhones
 
-{% 
+
+<!-- {% 
   include project-image-container.html
   caption = "We designed the homepage with an emphasis on making the process of finding out when a specific bus will arrive at a specific stop as smooth and simple as possible."
   images = "/assets/img/cdta/cdta-1.png, /assets/img/cdta/cdta-1.png, /assets/img/cdta/cdta-1.png"
   side-caption = true
-%}
+%} -->

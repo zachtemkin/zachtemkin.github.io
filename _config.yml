@@ -3,6 +3,7 @@ url: '' # the base hostname & protocol for your site, e.g. http://example.com
 gems:
   - jekyll-feed
   - jekyll-assets
+  # - octopress-wrap-tag
 exclude:
   - Gemfile
   - Gemfile.lock
