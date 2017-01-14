@@ -1,5 +1,5 @@
 {% if include.relUrl %}
-	{% assign url = include.link | relative_url %}
+	{% assign url = include.link | prepend: site.github.url %}
 {% else %}
 	{% assign url = include.link %}
 {% endif %}

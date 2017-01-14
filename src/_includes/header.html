@@ -1,14 +1,14 @@
 <header>
   <div class="inner">
     <div class="logo-container">
-      <a href="{{ '/' | relative_url }}">
-        <img src="{{ '/assets/img/logo.svg' | relative_url }}">
+      <a href="{{ '/' | prepend: site.github.url }}">
+        <img src="{{ '/assets/img/logo.svg' | prepend: site.github.url }}">
       </a>
     </div>
     <nav class="main-nav" id="main-nav">
       <ul>
-        <li><a href="{{ '/#work' | relative_url }}">Work</a></li>
-        <li><a href="{{ '#footer' | relative_url }}">contact</a></li>
+        <li><a href="{{ '/#work' | prepend: site.github.url }}">Work</a></li>
+        <li><a href="{{ '#footer' | prepend: site.github.url }}">contact</a></li>
         <li><a href="http://blog.zachtemkin.us">sketchbook</a></li>
       </ul>
     </nav>

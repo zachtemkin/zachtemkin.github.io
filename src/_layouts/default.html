@@ -8,10 +8,10 @@
 	    {% include footer.html %}
     </div>
 		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-		<script src="{{ '/assets/js/jquery.lazyload.js' | relative_url }}"></script>
+		<script src="{{ '/assets/js/jquery.lazyload.js' | prepend: site.github.url }}"></script>
     <script src="https://use.typekit.net/gww7plm.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <script type="text/javascript" src="{{ '/assets/js/bundle.js' | relative_url }}" charset="utf-8"></script>
-    <script type="text/javascript" src="{{ '/assets/js/main.js' | relative_url }}" charset="utf-8"></script>
+    <script type="text/javascript" src="{{ '/assets/js/bundle.js' | prepend: site.github.url }}" charset="utf-8"></script>
+    <script type="text/javascript" src="{{ '/assets/js/main.js' | prepend: site.github.url }}" charset="utf-8"></script>
   </body>
 </html>
