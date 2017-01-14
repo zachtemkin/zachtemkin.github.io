@@ -4,33 +4,38 @@ layout: default
 
 <div class="project-content">
   {% assign back_url = "#" | append: page.ID %}
-  <p class="multi-button-container">
+
+  <div class="multi-button-container">
     {% if page.previous.url %}
       {%
         include zt-button.html
-        dir = "prev"
-        text = page.previous.title
+        dir = "left"
+        text = "previous project"
         link = page.previous.url
         relUrl = true
+        textButton = true
       %}
+      <span>&bull;</span>
     {% endif %}
     {%
       include zt-button.html
-      dir = "up"
       text = "home"
       link = back_url
       relUrl = true
+      textButton = true
     %}
     {% if page.next.url %}
+      <span>&bull;</span>
       {%
         include zt-button.html
-        dir = "next"
-        text = page.next.title
+        dir = "right"
+        text = "next project"
         link = page.next.url
         relUrl = true
+        textButton = true
       %}
     {% endif %}
-  </p>
+  </div>
   <div class="title">
     <h1>{{ page.title }}</h1>
     <p>{{ page.brief }}</p>
@@ -40,6 +45,7 @@ layout: default
           include zt-button.html
           text = item.text
           link = item.link
+          dir = "right"
           relUrl = item.rel
         %}
       {% endfor %}
@@ -53,34 +59,37 @@ layout: default
   %}
    
   {{ content }}
+
+  <hr class="fin"/>
   
-  <p>
-  {%
-    include zt-button.html
-    dir = "up"
-    text = "home"
-    link = back_url
-    relUrl = true
-    featured = true
-  %}
-  </p>
   <div class="multi-button-container">
     {% if page.previous.url %}
       {%
         include zt-button.html
         dir = "left"
-        text = page.previous.title
+        text = "previous project"
         link = page.previous.url
         relUrl = true
+        textButton = true
       %}
+      <span>&bull;</span>
     {% endif %}
+    {%
+      include zt-button.html
+      text = "home"
+      link = back_url
+      relUrl = true
+      textButton = true
+    %}
     {% if page.next.url %}
+      <span>&bull;</span>
       {%
         include zt-button.html
         dir = "right"
-        text = page.next.title
+        text = "next project"
         link = page.next.url
         relUrl = true
+        textButton = true
       %}
     {% endif %}
   </div>

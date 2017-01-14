@@ -1,7 +1,7 @@
 .zt-button {
   @include font(san-serif);
   background-color: $cool-gray-light;
-  color: darken($cool-gray-light, 45%);
+  color: $cool-gray-med;
   font-size: 1.25em;
   font-variant: small-caps;
   font-weight: 600;
@@ -10,20 +10,18 @@
   padding: 10px 15px 12px;
   text-align: center;
   text-transform: lowercase;
-  transition: color .3s ease-in-out;
   vertical-align: middle;
-
-  &:hover {
-    color: $transparent;
-    transition: color .3s ease-in-out;
-  }
 }
 
 .slide-button {
   display: inline-block;
   overflow: hidden;
   position: relative;
-  transition: width .5s cubic-bezier(.215, .61, .355, 1);
+  transition: .3s padding .1s cubic-bezier(.215, .61, .355, 1), .2s color .1s ease-in-out;
+
+  &:active {
+    background-color: darken($cool-gray-light, 10%);
+  }
 
   &--featured {
     display: inline-block;
@@ -31,9 +29,18 @@
     transform: translateX(-50%);
   }
 
+  &--text-button {
+    background-color: $transparent;
+    color: lighten($cool-gray-dark, 25%);
+
+    &:active {
+      background-color: $cool-gray-light;
+    }
+  }
+
   &::after {
     background-color: transparent;
-    color: $cool-gray-med;
+    color: $transparent;
     display: block;
     font-family: 'SSStandard';
     font-size: 1em;
@@ -42,8 +49,16 @@
     padding: 10px 15px 12px;
     position: absolute;
     text-align: center;
-    transition: all .5s cubic-bezier(.215, .61, .355, 1);
+    transition: .3s padding .1s cubic-bezier(.215, .61, .355, 1), .2s color .1s ease-in-out;
     width: 100%;
+  }
+
+  &:hover {
+    color: $cool-gray-med;
+
+    &::after {
+      color: $cool-gray-med;
+    }
   }
 
   &--left {
@@ -51,13 +66,14 @@
       content: '\25c5';
       left: 50%;
       top: 0;
-      transform: translateX(0);
+      transform: translateX(calc(-100% + 2.5rem));
     }
 
     &:hover {
+      padding-left: 3rem;
+
       &::after {
-        opacity: 1;
-        transform: translateX(-50%);
+        transform: translateX(calc(-100% + 2.5rem));
       }
     }
   }
@@ -67,121 +83,31 @@
       content: '\25bb';
       right: 50%;
       top: 0;
+      transform: translateX(calc(100% - 2.5rem));
     }
 
     &:hover {
+      padding-right: 3rem;
+
       &::after {
-        opacity: 1;
-        transform: translateX(50%);
+        transform: translateX(calc(100% - 2.5rem));
       }
     }
   }
 
-  &--up {
-    &::after {
-      content: '\f500';
-      left: 50%;
-      top: 80%;
-      transform: translateX(-50%);
-    }
-
+  &--none {
     &:hover {
-      &::after {
-        opacity: 1;
-        transform: translateX(-50%) translateY(-70%);
-      }
-    }
-  }
-
-  &--down {
-    &::after {
-      bottom: 64%;
-      content: '\f501';
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    &:hover {
-      &::after {
-        opacity: 1;
-        transform: translateX(-50%) translateY(70%);
-      }
-    }
-  }
-
-  &:active {
-    background-color: darken($cool-gray-light, 10%);
-    &::after {
-      opacity: 1;
-    }
-  }
-
-  &--next-project,
-  &--prev-project {
-    background-color: $cool-gray-dark;
-    color: $transparent;
-    padding: 10px 3rem 12px;
-    transition: .5s width 0.3s ease-in-out, .3s color 0.3s ease-in-out;
-    width: 2rem;
-    white-space: nowrap;
-
-    &::after {
-      color: $white;
-      transition: .5s all 0.3s cubic-bezier(.215, .61, .355, 1);
-    }
-
-    &:hover {
-      color: $white;
-      width: 515px;
-      transition: width .5s ease-in-out, color .3s ease-in-out;
-
-      &::after {
-        transition: .5s all cubic-bezier(.215, .61, .355, 1);
-      }
-    }
-  }
-
-  &--next-project {
-    text-align: right;
-
-    &::after {
-      content: '\25bb';
-      opacity: 1;
-      right: 50%;
-      top: 0;
-      transform: translateX(50%);
-    }
-
-    &:hover {
-      &::after {
-        right: 1.5rem;
-        transform: translateX(50%);
-      }
-    }
-  }
-
-  &--prev-project {
-    text-align: left;
-
-    &::after {
-      content: '\25c5';
-      left: 50%;
-      top: 0;
-      transform: translateX(-50%);
-    }
-
-    &:hover {
-      &::after {
-        left: 1.5rem;
-        transform: translateX(-50%);
-      }
+      text-decoration: underline;
     }
   }
 }
 
-
 .multi-button-container {
   @include content-column;
-  margin: 0 auto;
+  margin: 0 auto .5rem;
   text-align: center;
+
+  span {
+    color: $zt-red;
+  }
 }

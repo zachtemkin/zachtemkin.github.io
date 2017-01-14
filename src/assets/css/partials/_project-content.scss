@@ -1,9 +1,9 @@
 .project-content {
   background-color: $white;
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
   margin-top: 1.5rem;
   overflow: hidden;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   position: relative;
 
   h1 {
@@ -113,5 +113,12 @@
 
   ol > li {
     list-style-type: decimal;
+  }
+
+  .fin {
+    @include content-column;
+    border: 0;
+    border-top: 1px solid $cool-gray-light;
+    margin: 4em auto 2em;
   }
 }

@@ -85,13 +85,6 @@ footer {
         background-color: $white;
         padding: 5px 15px 15px;
 
-        > li {
-          display: block;
-          list-style-type: disc;
-          margin: 0 auto;
-          width: 90%;
-        }
-
         .likes {
           color: lighten($zt-red, 8%);
           line-height: 25px;
@@ -122,7 +115,7 @@ footer {
           }
         }
 
-        .caption {
+        .insta-caption {
           color: $dark-gray;
           font-weight: 500;
           line-height: 1.4;
