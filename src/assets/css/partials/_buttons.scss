@@ -10,11 +10,12 @@
   padding: 10px 15px 12px;
   text-align: center;
   text-transform: lowercase;
-  transition: .3s color ease-in-out;
+  transition: color .3s ease-in-out;
   vertical-align: middle;
 
   &:hover {
     color: $transparent;
+    transition: color .3s ease-in-out;
   }
 }
 
@@ -22,6 +23,7 @@
   display: inline-block;
   overflow: hidden;
   position: relative;
+  transition: width .5s cubic-bezier(.215, .61, .355, 1);
 
   &--featured {
     display: inline-block;
@@ -113,7 +115,70 @@
       opacity: 1;
     }
   }
+
+  &--next-project,
+  &--prev-project {
+    background-color: $cool-gray-dark;
+    color: $transparent;
+    padding: 10px 3rem 12px;
+    transition: .5s width 0.3s ease-in-out, .3s color 0.3s ease-in-out;
+    width: 2rem;
+    white-space: nowrap;
+
+    &::after {
+      color: $white;
+      transition: .5s all 0.3s cubic-bezier(.215, .61, .355, 1);
+    }
+
+    &:hover {
+      color: $white;
+      width: 515px;
+      transition: width .5s ease-in-out, color .3s ease-in-out;
+
+      &::after {
+        transition: .5s all cubic-bezier(.215, .61, .355, 1);
+      }
+    }
+  }
+
+  &--next-project {
+    text-align: right;
+
+    &::after {
+      content: '\25bb';
+      opacity: 1;
+      right: 50%;
+      top: 0;
+      transform: translateX(50%);
+    }
+
+    &:hover {
+      &::after {
+        right: 1.5rem;
+        transform: translateX(50%);
+      }
+    }
+  }
+
+  &--prev-project {
+    text-align: left;
+
+    &::after {
+      content: '\25c5';
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+
+    &:hover {
+      &::after {
+        left: 1.5rem;
+        transform: translateX(-50%);
+      }
+    }
+  }
 }
+
 
 .multi-button-container {
   @include content-column;

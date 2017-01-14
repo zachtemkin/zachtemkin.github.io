@@ -13,6 +13,10 @@
 		{% assign directionSubClass = "slide-button--down" %}
 	{% when 'up' %}
 		{% assign directionSubClass = "slide-button--up" %}
+	{% when 'next' %}
+		{% assign directionSubClass = "slide-button--next-project" %}
+	{% when 'prev' %}
+		{% assign directionSubClass = "slide-button--prev-project" %}
 	{% else %}
 		{% assign directionSubClass = "slide-button--right" %}
 {% endcase %}

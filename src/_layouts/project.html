@@ -4,15 +4,33 @@ layout: default
 
 <div class="project-content">
   {% assign back_url = "#" | append: page.ID %}
-  {%
-    include zt-button.html
-    dir = "up"
-    text = "home"
-    link = back_url
-    relUrl = true
-    featured = true
-  %}
-
+  <p class="multi-button-container">
+    {% if page.previous.url %}
+      {%
+        include zt-button.html
+        dir = "prev"
+        text = page.previous.title
+        link = page.previous.url
+        relUrl = true
+      %}
+    {% endif %}
+    {%
+      include zt-button.html
+      dir = "up"
+      text = "home"
+      link = back_url
+      relUrl = true
+    %}
+    {% if page.next.url %}
+      {%
+        include zt-button.html
+        dir = "next"
+        text = page.next.title
+        link = page.next.url
+        relUrl = true
+      %}
+    {% endif %}
+  </p>
   <div class="title">
     <h1>{{ page.title }}</h1>
     <p>{{ page.brief }}</p>

@@ -1,3 +1,12 @@
+var $menu = document.getElementById('menu');
+var $wrapper = document.getElementById('menu-wrapper');
+var $ul = document.getElementById('main-nav ul');
+
+$menu.on('click', function() {
+  $wrapper.toggleClass('is-clicked');
+  $ul.toggleClass('is-expanded');
+});
+
 var feed = new Instafeed({
   get: 'user',
   userId: 12532684,
