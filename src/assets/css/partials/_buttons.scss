@@ -14,28 +14,13 @@
 }
 
 .slide-button {
-  display: inline-block;
+  display: block;
   overflow: hidden;
   position: relative;
   transition: .3s padding .1s cubic-bezier(.215, .61, .355, 1), .2s color .1s ease-in-out;
 
-  &:active {
-    background-color: darken($cool-gray-light, 10%);
-  }
-
-  &--featured {
+  @include breakpoint(screen-sm) {
     display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  &--text-button {
-    background-color: $transparent;
-    color: lighten($cool-gray-dark, 25%);
-
-    &:active {
-      background-color: $cool-gray-light;
-    }
   }
 
   &::after {
@@ -51,6 +36,38 @@
     text-align: center;
     transition: .3s padding .1s cubic-bezier(.215, .61, .355, 1), .2s color .1s ease-in-out;
     width: 100%;
+  }
+
+  &:active {
+    background-color: darken($cool-gray-light, 10%);
+  }
+
+  &--featured {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--text-button {
+    background-color: $transparent;
+    color: lighten($cool-gray-dark, 25%);
+    padding: 0 15px;
+
+    &::after {
+      padding: 0 15px;
+    }
+
+    &:active {
+      background-color: $cool-gray-light;
+    }
+
+    @include breakpoint(screen-sm) {
+      padding: 10px 15px 12px;
+
+      &::after {
+        padding: 10px 15px 12px;
+      }
+    }
   }
 
   &:hover {
@@ -104,8 +121,12 @@
 
 .multi-button-container {
   @include content-column;
-  margin: 0 auto .5rem;
+  margin: 0 auto 1rem;
   text-align: center;
+
+  @include breakpoint(screen-sm) {
+    margin: 0 auto .5rem;
+  }
 
   span {
     color: $zt-red;
