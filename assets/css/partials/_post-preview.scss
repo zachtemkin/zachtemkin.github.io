@@ -46,6 +46,7 @@
 
   .content-preview {
     align-items: center;
+    background-color: $cool-gray-light;
     display: flex;
     height: 10rem;
     margin: 1rem 0;
@@ -65,6 +66,7 @@
     p {
       color: $cool-gray-med;
       font-size: 1.25rem;
+      padding: 0 2rem;
       width: 100%;
 
       @include breakpoint(screen-sm) {
