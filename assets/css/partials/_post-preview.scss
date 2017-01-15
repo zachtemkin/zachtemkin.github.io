@@ -92,6 +92,21 @@
       padding-top: .5rem;
       text-transform: uppercase;
     }
+
+    .tags {
+      display: flex;
+      margin-top: 1rem;
+    }
+
+    .tag {
+      border: 1px solid $cool-gray-light;
+      color: $cool-gray-med;
+      padding: .25rem .5rem;
+
+      &:not(:last-child) {
+        margin-right: .25rem;
+      }
+    }
   }
 
   .zt-button {

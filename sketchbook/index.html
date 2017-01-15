@@ -28,6 +28,11 @@ layout: default
 			%}
 			</h3>
 			<p class="date">{{ post.date | timeago }}</p>
+			<ul class="tags">
+				{% for tag in post.tags%}
+				<li class="tag">{{ tag }}</li>
+				{% endfor %}
+			</ul>
 		</div>
 	</li>
 	{% endfor %}

@@ -1,4 +1,4 @@
-'illustration'---
+---
 layout: post
 title: dream waves
 date: '2016-05-23T18:18:04-05:00'
