@@ -15,4 +15,5 @@ I have been thinking about implementing a feature where a user can add a name 
 	link = "http://zachtemkin.us/lab/picto/"
 	dir = "right"
 	text = "picto"
+	featured = true
 %}
