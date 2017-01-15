@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: Pictograph
 date: '2013-02-28T00:05:00-06:00'

@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: made with paper
 date: '2014-08-17T00:57:29-05:00'

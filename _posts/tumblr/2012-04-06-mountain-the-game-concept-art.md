@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: mountain the game concept art
 date: '2012-04-06T00:00:00-05:00'

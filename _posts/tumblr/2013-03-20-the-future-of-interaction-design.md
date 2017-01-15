@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: The Future of Interaction Design
 date: '2013-03-20T17:22:00-05:00'

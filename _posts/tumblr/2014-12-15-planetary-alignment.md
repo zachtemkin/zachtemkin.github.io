@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: planetary alignment
 date: '2014-12-15T22:26:31-06:00'

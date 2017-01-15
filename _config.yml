@@ -2,6 +2,8 @@ baseurl: ''
 url: ''
 gems:
   - jekyll-assets
+  - jekyll-paginate
+  - jekyll-timeago
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -9,3 +11,25 @@ exclude:
 sass:
   sass_dir: ./assets/css
   style: compressed
+
+paginate: 5
+paginate_path: '/sketchbook/page:num/'
+
+jekyll_timeago:
+  depth: 1
+  today: 'today'
+  yesterday: 'yesterday'
+  tomorrow: 'tomorrow'
+  and: 'and'
+  suffix: 'ago'
+  prefix: ''
+  suffix_future: ''
+  prefix_future: 'in'
+  years: 'years'
+  year: 'year'
+  months: 'months'
+  month: 'month'
+  weeks: 'weeks'
+  week: 'week'
+  days: 'days'
+  day: 'day'

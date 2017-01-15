@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: rodrick the plant stares pensively out the window
 date: '2013-03-14T00:45:00-05:00'

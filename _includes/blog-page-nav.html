@@ -1,0 +1,33 @@
+<div class="pagination multi-button-container">
+  {% if paginator.previous_page %}
+    {%
+			include zt-button.html
+			dir = "left"
+			link = paginator.previous_page_path
+			relUrl = true
+      textButton = true
+			text = "Previous"
+    %}
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+	
+  <span class="bull">&bull;</span>
+  
+	<h3>{{ paginator.page }} of {{ paginator.total_pages }}</h3>
+  
+  <span class="bull">&bull;</span>  
+  
+  {% if paginator.next_page %}
+    {%
+			include zt-button.html
+			dir = "right"
+			link = paginator.next_page_path
+			relUrl = true
+      textButton = true
+			text = "Next"
+    %}
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>

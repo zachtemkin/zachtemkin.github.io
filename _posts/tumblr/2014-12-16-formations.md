@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: formations
 date: '2014-12-16T22:05:08-06:00'

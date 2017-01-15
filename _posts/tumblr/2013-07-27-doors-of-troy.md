@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: Doors of Troy
 date: '2013-07-27T20:25:00-05:00'

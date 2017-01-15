@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: an illustration of the troy bank building
 date: '2013-10-18T02:10:00-05:00'

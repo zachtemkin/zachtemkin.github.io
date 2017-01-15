@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: Calalilly (Autumn Approaches)
 date: '2013-08-16T03:13:00-05:00'

@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: im feeling nostalgic for school buses
 date: '2012-07-20T00:00:00-05:00'

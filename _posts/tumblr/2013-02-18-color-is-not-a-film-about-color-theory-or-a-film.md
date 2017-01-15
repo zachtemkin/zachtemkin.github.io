@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: no title
 date: '2013-02-18T14:34:00-06:00'

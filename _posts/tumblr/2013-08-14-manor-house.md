@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: manor house
 date: '2013-08-14T00:00:00-05:00'

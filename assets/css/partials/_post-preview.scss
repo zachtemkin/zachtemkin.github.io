@@ -1,0 +1,114 @@
+.blog-list-page {
+  padding-bottom: 2rem;
+}
+
+.post-list {
+  margin: 1.5rem auto 0;
+  overflow: hidden;
+  width: 90%;
+
+  @include breakpoint(screen-md) {
+    width: 100%;
+  }
+}
+
+.post-preview {
+  background-color: $white;
+  border-top: 1px solid $cool-gray-light;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  @include breakpoint(screen-sm) {
+    flex-flow: row wrap;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $cool-gray-light;
+    margin-bottom: 2rem;
+  }
+
+  .img-wrapper {
+    align-items: center;
+    display: flex;
+    height: 10rem;
+    margin: 1rem 0;
+    overflow: hidden;
+    padding: 1rem 0;
+    width: 100%;
+
+    @include breakpoint(screen-sm) {
+      width: 50%;
+    }
+
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+
+  .info {
+    font-size: 90%;
+    overflow: hidden;
+    padding: 0 0 1.25em;
+    width: 100%;
+    z-index: 100;
+
+    @include breakpoint(screen-sm) {
+      font-size: 100%;
+      padding: 1.25em 0 1.25em 1.25em;
+      width: 50%;
+    }
+
+    h3 {
+      color: $zt-red;
+      font-weight: 700;
+      letter-spacing: .02em;
+      line-height: 100%;
+      margin-bottom: .5rem;
+
+      @include breakpoint(screen-sm) {
+        font-size: 1.5em;
+      }
+    }
+
+    .date {
+      @include font(san-serif);
+      border-top: 1px solid $cool-gray-light;
+      color: darken($cool-gray-light, 75%);
+      font-size: .85rem;
+      font-weight: 700;
+      margin: 0;
+      max-width: 50%;
+      padding-top: .5rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .zt-button {
+    color: $zt-red;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-variant: normal;
+    padding: 0;
+    text-transform: capitalize;
+
+    &::after {
+      padding: 0;
+    }
+
+    &:hover {
+      padding-right: 2.5em;
+
+      &::after {
+        color: $zt-red;
+      }
+    }
+  }
+}

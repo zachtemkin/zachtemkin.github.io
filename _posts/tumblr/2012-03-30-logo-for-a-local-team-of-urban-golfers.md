@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: logo for a local team of urban golfers
 date: '2012-03-30T00:00:00-05:00'

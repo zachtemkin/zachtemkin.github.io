@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: desert visions
 date: '2014-08-01T01:07:47-05:00'

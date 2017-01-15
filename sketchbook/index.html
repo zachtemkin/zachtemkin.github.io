@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<div class="inner blog-list-page">
+	{% include blog-description.html %}
+	
+	{% include blog-page-nav.html %}
+	
+	<ul class="post-list">
+	{% for post in paginator.posts %}
+	<li class="post-preview" id="{{ post.ID }}">
+		<div class="img-wrapper">
+		{% if post.img %}
+			<img src="{{ post.img[0] | prepend: site.github.url }}" alt="{{ post.title }}">
+		{% else %}
+			{{ post.content | split:'<!--break-->' | first }}
+		{% endif %}	
+		</div>
+		<div class="info">
+			<h3>
+			{%
+				include zt-button.html
+				dir = "right"
+				link = post.url
+				relUrl = true
+				text = post.title
+				textButton = true
+			%}
+			</h3>
+			<p class="date">{{ post.date | timeago }}</p>
+		</div>
+	</li>
+	{% endfor %}
+	</ul>
+
+	{% include blog-page-nav.html %}
+</div>

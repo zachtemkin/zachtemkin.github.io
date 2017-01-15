@@ -1,4 +1,6 @@
 ---
+categories: blog
+img: "/assets/img/blog_images/" 
 layout: post
 title: anteater finds a mysterious light in the forest
 date: '2012-08-08T00:00:00-05:00'
