@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-<div class="description-container">
-	<div class="title">
-		<h1>Posts by Tag</h1>
-		<p>Explore posts by tag</p>
-	</div>
-</div>
-
 <div class="inner blog-list-page tag-page">
-	{% for tag in site.tags %}
+	<div class="description-container">
+		<div class="title">
+			<h1>Posts by Tag</h1>
+		</div>
+	</div>
+	
+	{% assign tag_alpha = site.tags | sort: value %}
+	{% for tag in tag_alpha %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 	
