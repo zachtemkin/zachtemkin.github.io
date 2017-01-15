@@ -8,17 +8,13 @@
       textButton = true
 			text = "Previous"
     %}
-  {% else %}
-    <span class="previous">Previous</span>
+    <span class="bull">&bull;</span>
   {% endif %}
-	
-  <span class="bull">&bull;</span>
   
 	<h3>{{ paginator.page }} of {{ paginator.total_pages }}</h3>
   
-  <span class="bull">&bull;</span>  
-  
   {% if paginator.next_page %}
+    <span class="bull">&bull;</span>  
     {%
 			include zt-button.html
 			dir = "right"
@@ -27,7 +23,5 @@
       textButton = true
 			text = "Next"
     %}
-  {% else %}
-    <span class="next ">Next</span>
   {% endif %}
 </div>
