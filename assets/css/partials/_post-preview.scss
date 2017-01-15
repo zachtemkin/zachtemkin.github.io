@@ -46,7 +46,6 @@
 
   .content-preview {
     align-items: center;
-    background-color: $cool-gray-light;
     display: flex;
     height: 10rem;
     margin: 1rem 0;
@@ -71,6 +70,17 @@
 
       @include breakpoint(screen-sm) {
         padding-right: 2rem;
+      }
+    }
+
+    blockquote {
+      margin: 0 2rem;
+      padding: 2rem 0;
+
+      &::before {
+        left: -1rem;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
 
