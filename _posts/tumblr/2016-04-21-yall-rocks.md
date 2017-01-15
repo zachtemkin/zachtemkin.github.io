@@ -9,4 +9,3 @@ img:
 - "/assets/img/blog_images/yall-rocks.png"
 - "/assets/img/blog_images/hello.png"
 ---
-Y’all Rocks

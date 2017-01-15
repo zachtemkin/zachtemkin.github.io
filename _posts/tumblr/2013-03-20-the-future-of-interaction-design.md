@@ -2,7 +2,7 @@
 layout: post
 title: The Future of Interaction Design
 date: '2013-03-20T17:22:00-05:00'
-tags: []
+tags: ['design', 'writing', 'opinion']
 tumblr_url: http://blog.zachtemkin.us/post/45859943641/the-future-of-interaction-design
 categories: blog
 ---

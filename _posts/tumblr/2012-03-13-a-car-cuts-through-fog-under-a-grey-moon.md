@@ -2,7 +2,7 @@
 layout: post
 title: a car cuts through fog at night
 date: '2012-03-13T00:00:00-05:00'
-tags: []
+tags: ['illustration']
 tumblr_url: http://blog.zachtemkin.us/post/56752644188/a-car-cuts-through-fog-under-a-grey-moon
 categories: blog
 img:

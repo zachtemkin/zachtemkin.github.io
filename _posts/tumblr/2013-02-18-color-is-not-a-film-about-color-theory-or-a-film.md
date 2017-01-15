@@ -2,7 +2,7 @@
 layout: post
 title: COLOR by Tom Sachs
 date: '2013-02-18T14:34:00-06:00'
-tags: []
+tags: ['design', 'writing', 'opinion']
 tumblr_url: http://blog.zachtemkin.us/post/43419434684/color-is-not-a-film-about-color-theory-or-a-film
 categories: blog
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Doors of Troy
 date: '2013-07-27T20:25:00-05:00'
-tags: []
+tags: ['illustration', 'architectural']
 tumblr_url: http://blog.zachtemkin.us/post/56645480768/doors-of-troy
 categories: blog
 ---

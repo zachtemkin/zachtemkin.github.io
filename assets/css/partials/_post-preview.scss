@@ -30,7 +30,7 @@
     margin-bottom: 2rem;
   }
 
-  .img-wrapper {
+  .content-preview {
     align-items: center;
     display: flex;
     height: 10rem;
@@ -49,6 +49,9 @@
     }
 
     p {
+      color: $cool-gray-med;
+      font-size: 1.25rem;
+      padding-right: 2rem;
       width: 100%;
     }
   }

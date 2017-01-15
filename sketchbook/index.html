@@ -9,7 +9,7 @@ layout: default
 	<ul class="post-list">
 	{% for post in paginator.posts %}
 	<li class="post-preview" id="{{ post.ID }}">
-		<div class="img-wrapper">
+		<div class="content-preview">
 		{% if post.img %}
 			<img src="{{ post.img[0] | prepend: site.github.url }}" alt="{{ post.title }}">
 		{% else %}

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: danger danger will robinson
+title: 'B-9'
 date: '2012-05-25T00:00:00-05:00'
-tags: []
+tags: ['illustration']
 tumblr_url: http://blog.zachtemkin.us/post/90519329812/danger-danger-will-robinson
 categories: blog
 img:

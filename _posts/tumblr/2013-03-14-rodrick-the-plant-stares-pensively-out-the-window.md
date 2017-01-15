@@ -2,7 +2,7 @@
 layout: post
 title: rodrick the plant
 date: '2013-03-14T00:45:00-05:00'
-tags: []
+tags: ['illustration']
 tumblr_url: http://blog.zachtemkin.us/post/56664569626/rodrick-the-plant-stares-pensively-out-the-window
 categories: blog
 img: 

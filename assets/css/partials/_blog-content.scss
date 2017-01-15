@@ -49,34 +49,6 @@
     }
   }
 
-  blockquote {
-    @include content-column;
-    border-bottom: 1px solid $cool-gray-light;
-    border-top: 1px solid $cool-gray-light;
-    margin: 1.5em auto;
-    padding: 1.5em 3.5em;
-    position: relative;
-
-    > p {
-      @include font(primary);
-      color: $cool-gray-med;
-      font-size: 1.25em;
-      line-height: 1.6;
-      margin: 0;
-      max-width: 100%;
-    }
-
-    &::before {
-      @include font(serif);
-      color: $zt-red;
-      content: '\201c';
-      font-size: 4rem;
-      left: 0;
-      position: absolute;
-      top: 0;
-    }
-  }
-
   ul,
   ol {
     @include content-column;
@@ -120,5 +92,33 @@
   border: 0;
   border-top: 1px solid $cool-gray-light;
   margin: 4em auto 2em;
+}
+
+blockquote {
+  @include content-column;
+  border-bottom: 1px solid $cool-gray-light;
+  border-top: 1px solid $cool-gray-light;
+  margin: 1.5em auto;
+  padding: 1.5em 3.5em;
+  position: relative;
+
+  > p {
+    @include font(primary);
+    color: $cool-gray-med;
+    font-size: 1.25em;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  &::before {
+    @include font(serif);
+    color: $zt-red;
+    content: '\201c';
+    font-size: 4rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
 }
 
