@@ -16,4 +16,5 @@ Bret Victor makes a compelling argument for the misguidedness of the current par
 	link = "http://worrydream.com/#!/ABriefRantOnTheFutureOfInteractionDesign"
 	dir = "right"
 	text = "Original talk by Bret Victor"
+	featured = true
 %}
