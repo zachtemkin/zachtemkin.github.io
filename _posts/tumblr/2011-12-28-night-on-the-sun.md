@@ -2,7 +2,8 @@
 layout: post
 title: 'night on the sun'
 date: '2011-12-28T00:00:00-06:00'
-tags: ['illustration']
+tags: 
+- illustration
 tumblr_url: http://blog.zachtemkin.us/post/57755380021
 categories: blog
 img:

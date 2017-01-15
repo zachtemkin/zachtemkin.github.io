@@ -2,7 +2,8 @@
 layout: post
 title: 'Night Trees'
 date: '2011-04-01T00:00:00-05:00'
-tags: ['painting']
+tags: 
+- painting
 tumblr_url: http://blog.zachtemkin.us/post/58985329820
 categories: blog
 img:

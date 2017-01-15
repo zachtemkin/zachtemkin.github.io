@@ -1,9 +1,10 @@
 ---
 layout: post
-title: blurry forest
+title: 'blurry forest'
 date: '2014-08-17T00:57:29-05:00'
-tags: ['illustration', 'drawing']
-- MadeWithPaper
+tags:
+- illustration
+- drawing
 tumblr_url: http://blog.zachtemkin.us/post/94973194857/made-with-paper
 categories: blog
 img:

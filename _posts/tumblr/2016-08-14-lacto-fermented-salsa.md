@@ -2,7 +2,9 @@
 layout: post
 title: lacto fermented salsa
 date: '2016-08-14T11:01:07-05:00'
-tags: ['illustration', 'poster design']
+tags:
+- illustration
+- poster design
 tumblr_url: http://blog.zachtemkin.us/post/148932942157/lacto-fermented-salsa
 categories: blog
 img: 

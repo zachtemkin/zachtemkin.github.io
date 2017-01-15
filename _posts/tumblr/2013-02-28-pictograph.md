@@ -2,7 +2,8 @@
 layout: post
 title: Pictograph
 date: '2013-02-28T00:05:00-06:00'
-tags: ['experiment']
+tags: 
+- experiment
 tumblr_url: http://blog.zachtemkin.us/post/44199710118/pictograph
 categories: blog
 ---
