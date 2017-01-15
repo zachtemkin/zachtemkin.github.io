@@ -4,7 +4,7 @@ title: 'troy, NY bank building'
 date: '2013-10-18T02:10:00-05:00'
 tags:
 - illustration
-- architechtural
+- architectural
 tumblr_url: http://blog.zachtemkin.us/post/64368870300/an-illustration-of-the-troy-bank-building
 categories: blog
 img: 

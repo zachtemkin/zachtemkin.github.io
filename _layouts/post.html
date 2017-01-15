@@ -17,7 +17,7 @@ layout: default
 	  {% endif %}
 	  {%
 	    include zt-button.html
-	    text = "back"
+	    text = "sketchbook"
 	    link = "/sketchbook"
 	    relUrl = true
 	    textButton = true
@@ -41,7 +41,7 @@ layout: default
 		{% if page.tags %}
 		<ul class="tags">
 			{% for tag in page.tags%}
-			<li class="tag">{{ tag }}</li>
+			<li class="tag"><a href="{{ '/sketchbook/tags.html/' | append: '#' | append: tag | prepend: site.github.url }}">{{ tag }}</a></li>
 			{% endfor %}
 		</ul>
 		{% endif %}
@@ -71,7 +71,7 @@ layout: default
 	  {% endif %}
 	  {%
 	    include zt-button.html
-	    text = "back"
+	    text = "sketchbook"
 	    link = "/sketchbook"
 	    relUrl = true
 	    textButton = true

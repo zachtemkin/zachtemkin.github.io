@@ -2,6 +2,20 @@
   padding-bottom: 2rem;
 }
 
+.tag-page {
+  @include content-column;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: -700;
+  }
+
+  .post-list {
+    margin: 0.5rem 0 0;
+  }
+}
+
 .post-list {
   margin: 1.5rem auto 0;
   overflow: hidden;
@@ -106,6 +120,34 @@
 
       &:not(:last-child) {
         margin-right: .25rem;
+      }
+
+      a {
+        color: $cool-gray-med;
+      }
+    }
+  }
+
+  &--post-by-tag {
+    .info {
+      padding: .5rem 0;
+      width: 100%;
+
+      .title {
+        font-size: 1.25rem;
+        margin-right: .25rem;
+        text-transform: capitalize;
+      }
+
+      .date {
+        border: 0;
+        color: $cool-gray-med;
+      }
+
+      &:hover {
+        .date {
+          color: $cool-gray-dark;
+        }
       }
     }
   }
