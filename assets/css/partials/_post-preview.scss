@@ -65,8 +65,20 @@
     p {
       color: $cool-gray-med;
       font-size: 1.25rem;
-      padding-right: 2rem;
       width: 100%;
+
+      @include breakpoint(screen-sm) {
+        padding-right: 2rem;
+      }
+    }
+
+    p,
+    blockquote {
+      align-self: flex-start;
+
+      @include breakpoint(screen-md) {
+        align-self: center;
+      }
     }
   }
 
