@@ -13,7 +13,7 @@ layout: default
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 	
-	<h2 id="{{ t | downcase }}">{{ t | downcase }}</h2>
+	<h2 id="{{ t | downcase }}">{{ t | downcase }} ({{ posts | size }})</h2>
 	<ul class="post-list">
 	{% for post in posts %}
 	  {% if post.tags contains t %}

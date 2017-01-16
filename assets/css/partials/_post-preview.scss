@@ -149,6 +149,12 @@
       a {
         color: $cool-gray-med;
       }
+
+      &:hover {
+        a {
+          color: $zt-red;
+        }
+      }
     }
   }
 

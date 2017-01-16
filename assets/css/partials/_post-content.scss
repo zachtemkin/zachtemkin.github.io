@@ -92,6 +92,14 @@
       &:not(:last-child) {
         margin-right: .25rem;
       }
+
+      a {
+        color: $cool-gray-med;
+
+        &:hover {
+          color: $zt-red;
+        }
+      }
     }
   }
 }
