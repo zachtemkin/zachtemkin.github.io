@@ -1,0 +1,118 @@
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+.boxes {
+  position: relative;
+  float: left;
+  z-index: 1;
+}
+
+.box {
+  position: relative;
+  float: left;
+  font-family: helvetica neue;
+  font-weight: 100;
+  font-size: 48px;
+  line-height: 100px;
+  color: white;
+  text-align: center;
+  z-index: 0;
+}
+
+.box:nth-child(2) {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.box:nth-child(3) {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+}
+.box:nth-child(4) {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+/* shape states */
+ .zero {
+    border-radius: none;
+}
+.one {
+    border-top-left-radius: 200px;
+}
+.two {
+    border-top-right-radius: 200px;
+}
+.three {
+    border-bottom-right-radius: 200px;
+}
+.four {
+    border-bottom-left-radius: 200px;
+}
+.five {
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+.six {
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+.seven {
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+.eight {
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+.nine {
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 200px;
+    100px;
+    border-top-right-radius: 200px;
+}
+.ten {
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+.eleven {
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+.twelve {
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 200px;
+}
+.thirteen {
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+.fourteen {
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}

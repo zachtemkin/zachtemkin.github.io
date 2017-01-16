@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Picto</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable = no"/>
+		<meta property="og:title" content="Picto" />
+		<meta property="og:url" content="http://zachtemkin.us/picto/" />
+		<meta property="og:image" content="http://zachtemkin.us/resources/picto-icon.png" />
+		<meta property="og:description" content="Picto is an meditative toy exploring shape. Touch the corners of the box to manipulate the shape and create some cool abstract symbols." />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!--<meta name="apple-mobile-web-app-status-bar-style" content="translucent black" />-->
+		<link rel="stylesheet" href="shape.css" type="text/css" />
+		<link rel="stylesheet" href="http://zachtemkin.us/resources/webbAppBanner.css" type="text/css" />
+		<link rel="stylesheet" href="http://zachtemkin.us/resources/animate.css" type="text/css" />
+		<link rel="shortcut icon" type="image/x-icon" href="http://zachtemkin.us/resources/picto-icon.png" />
+		<link rel="apple-touch-icon" href="http://zachtemkin.us/resources/picto-icon.png" />
+		<script type="text/javascript" src="http://zachtemkin.us/resources/jQuery.js"></script>
+		<script type="text/javascript" src="http://zachtemkin.us/resources/jQueryUi.js"></script>
+		<script type="text/javascript" src="http://zachtemkin.us/resources/webAppBanner.js"></script>
+		<script type="text/javascript" src="shape.js"></script>
+	</head>
+
+<body>
+	<div id="container">
+		<h1>
+			<form  id="banner">
+				<span>This is</span>
+				<input id="pictoname" class="animated null" type="text" placeholder="Picto" autocomplete="off" spellcheck="false"/>
+				<input id="enter" type="submit" value="name this &#9166;"/>
+			</form>
+		</h1>
+		<div id="container-inner" class="animated">
+			<div class="corner zero" id="one"></div>
+			<div class="corner zero" id="two"></div>
+			<div class="corner zero" id="three"></div>
+			<div class="corner zero" id="four"></div>
+		</div>
+	</div>
+</body>
+
+</html>
