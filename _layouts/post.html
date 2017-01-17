@@ -41,7 +41,7 @@ layout: default
 		{% if page.tags %}
 		<ul class="tags">
 			{% for tag in page.tags%}
-			<li class="tag"><a href="{{ '/sketchbook/tags.html/' | append: '#' | append: tag | prepend: site.github.url }}">{{ tag }}</a></li>
+			<li class="tag"><a href="{{ '/sketchbook/tags.html' | append: '#' | append: tag | prepend: site.github.url }}">{{ tag }}</a></li>
 			{% endfor %}
 		</ul>
 		{% endif %}
