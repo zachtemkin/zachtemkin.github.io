@@ -1,0 +1,96 @@
+---
+layout: default
+---
+
+<div class="project-content">
+  {% assign back_url = "/#" | append: page.ID %}
+
+  <div class="multi-button-container">
+    {% if page.previous.url %}
+      {%
+        include zt-button.html
+        dir = "left"
+        text = "previous project"
+        link = page.previous.url
+        relUrl = true
+        textButton = true
+      %}
+      <span>&bull;</span>
+    {% endif %}
+    {%
+      include zt-button.html
+      text = "home"
+      link = back_url
+      relUrl = true
+      textButton = true
+    %}
+    {% if page.next.url %}
+      <span>&bull;</span>
+      {%
+        include zt-button.html
+        dir = "right"
+        text = "next project"
+        link = page.next.url
+        relUrl = true
+        textButton = true
+      %}
+    {% endif %}
+  </div>
+  <div class="title">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.brief }}</p>
+    {% if page.appendix %}
+      {% for item in page.appendix %}
+        {%
+          include zt-button.html
+          text = item.text
+          link = item.link
+          dir = "right"
+          relUrl = item.rel
+        %}
+      {% endfor %}
+    {% endif %}
+  </div>
+  
+  {% 
+    include project-image-container.html
+    images = page.img
+    hasBackground = page.imgBg
+  %}
+   
+  {{ content }}
+
+  <hr class="fin"/>
+  
+  <div class="multi-button-container">
+    {% if page.previous.url %}
+      {%
+        include zt-button.html
+        dir = "left"
+        text = "previous project"
+        link = page.previous.url
+        relUrl = true
+        textButton = true
+      %}
+      <span>&bull;</span>
+    {% endif %}
+    {%
+      include zt-button.html
+      text = "home"
+      link = back_url
+      relUrl = true
+      textButton = true
+    %}
+    {% if page.next.url %}
+      <span>&bull;</span>
+      {%
+        include zt-button.html
+        dir = "right"
+        text = "next project"
+        link = page.next.url
+        relUrl = true
+        textButton = true
+      %}
+    {% endif %}
+  </div>
+</div>

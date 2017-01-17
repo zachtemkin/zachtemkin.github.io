@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Emoji</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="http://zachtemkin.us/resources/jQuery.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    i = 127744;
+		    while (i <= 128317) {
+		        $('#poo').append('&#' + i + ';');
+				i ++;
+		    }
+		});
+	</script>
+	
+	<style type="text/css">
+		body {
+			background-color: rgb(66,82,108);
+			background-image: url('http://zachtemkin.us/resources/bluegray.png');
+		}
+		
+		#poo {
+			position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+			margin: auto;
+			display: block;
+			width: 1000px;
+			height: 150px;
+			font-size: 150px;
+		}
+	</style>	
+</head>
+
+<body>
+	<p id="poo"></p>
+</body>
+
+</html>

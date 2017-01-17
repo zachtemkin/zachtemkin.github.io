@@ -1,0 +1,38 @@
+.description-container {
+  font-size: 90%;
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+
+  @include breakpoint(screen-sm) {
+    font-size: 100%;
+    margin-bottom: 4.5em;
+    padding-bottom: 0;
+  }
+
+  h1 {
+    font-size: 2.125rem;
+    font-weight: bold;
+
+    @include breakpoint(screen-sm) {
+      font-size: 2.75rem;
+    }
+  }
+  
+  p {
+    font-size: 1.125em;
+    margin: 0 auto;
+    width: 90%;
+
+    &:not(:last-of-type) {
+      margin-bottom: 1.25em;
+    }
+
+    @include breakpoint(screen-sm) {
+      line-height: 1.75em;
+    }
+
+    @include breakpoint(screen-md) {
+      width: 100%;
+    }
+  }
+}

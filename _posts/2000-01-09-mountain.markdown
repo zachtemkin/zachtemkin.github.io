@@ -1,0 +1,47 @@
+---
+layout: project
+title: "Mountain the Game"
+ID: "mountain"
+img: "/assets/img/thumbnails/mountain-thumb.png"
+photo-img: true
+brief: "Concept art for Mountain the Game, an explorative platformer about a journey up a mountain."
+roles: "Art direction; Asset creation"
+categories: portfolio
+---
+
+In the winter of 2012 I was asked by some friends to create concept art for Mountain the Game, a computer game about a journey from the big city to the top of a mystical mountain. Development is currently in hiatus.
+
+{%
+	include project-image-container.html
+	images = "/assets/img/mountain/mountaintitle.png"
+%}
+
+{% 
+  include project-image-container.html
+  images = "/assets/img/mountain/patch.png, /assets/img/mountain/dudewithdog.png"
+%}
+
+{% 
+  include project-image-container.html
+  images = "/assets/img/mountain/dog.gif, /assets/img/mountain/dudewalk.gif"
+%}
+
+{% 
+  include project-image-container.html
+  images = "/assets/img/mountain/street1.png"
+%}
+
+{% 
+  include project-image-container.html
+  images = "/assets/img/mountain/street2.png"
+%}
+
+{% 
+  include project-image-container.html
+  images = "/assets/img/mountain/street3.png"
+%}
+
+{% 
+  include project-image-container.html
+  images = "/assets/img/mountain/trees.png"
+%}

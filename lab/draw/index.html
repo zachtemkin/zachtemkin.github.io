@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>draw</title>
+		<meta charset="utf-8">
+		<meta property="og:title" content="draw">
+		<meta property="og:url" content="http://zachtemkin.us/draw/">	
+		<meta property="og:image" content="http://zachtemkin.us/resources/mosicon.png">
+		<meta property="og:description" content="explore, create, share">
+	<link rel="shortcut icon" type="image/x-icon" href="http://zachtemkin.us/resources/mosicon.png">
+	<link rel="apple-touch-icon" href="http://zachtemkin.us/resources/mosicon.png">
+	<link rel="stylesheet" href="draw.css" type="text/css">
+	<script type="text/javascript" src="http://zachtemkin.us/resources/jQuery.js"></script>
+	<script type="text/javascript" src="http://zachtemkin.us/resources/shortkeys.js"></script>
+	<script type="text/javascript" src="draw.js"></script>
+</head>
+<body>
+	<script type="text/javascript"> document.body.style.zoom="90%";</script>
+	<div id="container" class="noslct">
+		<div id="log"></div>
+		<div id="toolbox">
+			<div id="shape-tools">
+				<h1 class="head" id="shape-head">- Tools -</h1>
+				<div class="tool" id="tool1"></div>
+				<div class="tool" id="tool2"></div>
+				<div class="tool" id="tool3"></div>
+				<div class="tool" id="tool4" style='margin:0;'></div>
+				<br></br> 
+				<div class="tool" id="tool5"></div>
+				<div class="tool" id="tool6"></div>
+				<div class="tool" id="tool7"></div>
+				<div class="tool" id="tool8" style='margin:0;'></div>
+				<br></br> 
+				<div class="tool" id="tool9"></div>
+				<div class="tool" id="tool10"></div>
+				<div class="tool" id="tool11"></div>
+				<div class="tool" id="tool12" style='margin:0;'></div>
+				<br></br> 
+				<div class="tool" id="tool13"></div>
+				<div class="tool" id="tool14"></div>
+				<div class="tool" id="tool15"></div>
+				<div class="tool" id="tool16" style='margin:0;'></div>
+			</div>
+			<div id="settings">
+				<div class="setting" id="eraser">eraser</div>
+				<div class="setting" id="clear">clear</div>
+				<a class="setting" id="save">save</a>
+				<form><input type="text" value="Title" id="title"></form>
+				<a class="saved">saved drawings</a>
+				<div id="info">i</div> 
+			</div>
+		</div>
+		<div id="info-sheet">
+			<span id="shortcuts"><u>Shortcuts</u></span>
+			<ul id="shortcut-list">
+				<li>Press <b>e</b> to toggle eraser</li>
+				<li>Press <b>c</b> to clear canvas</li>
+			</ul>
+			<ul id="credits">
+				<li>&copy; 2012 Zachary Temkin</li>
+			</ul>	
+		</div>
+    	<div id="canvas"></div>
+	</div>
+</body>
+</html>

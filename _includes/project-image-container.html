@@ -1,0 +1,16 @@
+{% assign imageNames = include.images | split: ', ' %}
+
+<div class="project-image-block {% if include.featured %}project-image-block--featured{% endif %} {% if include.side-caption %}project-image-block--side-caption{% endif %}">
+  <div class="images {% if include.hasBackground %}images--has-background{% endif %}">
+    {% for image in imageNames %}
+    <div class="image-wrapper">
+  		<img class="lazy" data-original="{{ image | prepend: site.github.url }}">
+    </div>
+    {% endfor %}
+  </div>
+  {% if include.caption %}
+  <div class="caption">
+    <p>{{ include.caption }}</p>
+  </div>
+  {% endif %}
+</div>

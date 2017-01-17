@@ -1,0 +1,16 @@
+{% if include.relUrl %}
+	{% assign url = include.link | prepend: site.github.url %}
+{% else %}
+	{% assign url = include.link %}
+{% endif %}
+
+{% case include.dir %}
+	{% when 'left' %}
+		{% assign directionSubClass = "slide-button--left" %}
+	{% when 'right' %}
+		{% assign directionSubClass = "slide-button--right" %}
+	{% else %}
+		{% assign directionSubClass = "slide-button--none" %}
+{% endcase %}
+
+<a href="{{ url }}" class="zt-button slide-button {{ directionSubClass }} {% if include.featured %}slide-button--featured{% endif %} {% if include.textButton %}slide-button--text-button{% endif %}">{{ include.text }}</a>

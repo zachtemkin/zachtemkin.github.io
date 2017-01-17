@@ -1,0 +1,174 @@
+footer {
+  background-color: $zt-purple;
+  bottom: 0;
+  display: block;
+  overflow: hidden;
+  padding: 50px 0;
+  width: 100%;
+
+  p {
+    color: darken($cool-gray-light, 50%);
+    font-size: 1.25em;
+    font-weight: 700;
+    letter-spacing: .02em;
+  }
+
+  h4 {
+    color: darken($cool-gray-light, 30%);
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: .05em;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  .instafeed {
+    @include font(san-serif);
+    font-size: 70%;
+    height: auto;
+    margin-top: 25px;
+    overflow: hidden;
+    width: 100%;
+
+    @include breakpoint(screen-md) {
+      font-size: 100%;
+    }
+
+    > h4 {
+      color: $cool-gray-light;
+      margin-top: 1.5em;
+    }
+
+    .zt-gram {
+      margin-bottom: 1.5em;
+      width: 49%;
+
+      &:nth-child(even) {
+        clear: left;
+        float: left;
+        margin-right: 2%;
+      }
+
+      &:nth-child(odd) {
+        clear: right;
+        float: right;
+      }
+
+      @include breakpoint(screen-md) {
+        width: 24.25%;
+
+        &:not(:last-of-type) {
+          margin-right: 1%;
+        }
+
+        &:nth-child(even),
+        &:nth-child(odd) {
+          clear: none;
+          float: left;
+        }
+      }
+
+      > img {
+        background-color: $white;
+        display: inline-block;
+        height: auto;
+        max-width: 100%;
+        padding: {
+          bottom: 0;
+          left: 5px;
+          right: 5px;
+          top: 5px;
+        }
+      }
+
+      .info-container {
+        background-color: $white;
+        padding: 5px 15px 15px;
+
+        .likes {
+          color: lighten($zt-red, 8%);
+          line-height: 25px;
+          margin-top: 5px;
+          padding: 5px;
+          text-align: left;
+          vertical-align: middle;
+
+          &::before {
+            content: '\2665';
+            font-family: 'SSStandard';
+            margin-right: 3px;
+            vertical-align: middle;
+          }
+        }
+
+        .location {
+          color: $dark-gray;
+          letter-spacing: .02em;
+          line-height: 100%;
+          margin-bottom: 10px;
+          margin-top: 5px;
+          text-align: left;
+
+          &::before {
+            content: '\1f4cd';
+            font-family: 'SSStandard';
+          }
+        }
+
+        .insta-caption {
+          color: $dark-gray;
+          font-weight: 500;
+          line-height: 1.4;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .about {
+    background-color: $white;
+    font-size: 80%;
+    height: auto;
+    margin-top: 1.5em;
+    padding: 1.5em;
+    width: 100%;
+
+    @include breakpoint(screen-sm) {
+      float: left;
+      font-size: 100%;
+      width: 59.5%;
+    }
+  }
+
+  .contact {
+    background-color: $white;
+    font-size: 80%;
+    height: auto;
+    margin-top: 1.5em;
+    padding: 1.5em;
+    width: 100%;
+
+    @include breakpoint(screen-sm) {
+      float: left;
+      font-size: 100%;
+      margin-left: 1%;
+      width: 39.5%;
+    }
+
+    li {
+      margin-bottom: .5em;
+
+      span {
+        border-bottom: 1px solid $cool-gray-light;
+        color: darken($cool-gray-light, 50%);
+        display: block;
+        padding-bottom: .25em;
+      }
+
+      a {
+        font-size: 1.125em;
+        font-weight: 700;
+      }
+    }
+  }
+}

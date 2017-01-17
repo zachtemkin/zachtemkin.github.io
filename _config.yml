@@ -1,14 +1,35 @@
-baseurl: '/ztblog' # the subpath of your site, e.g. /blog
-url: '' # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ''
+url: ''
 gems:
-  - jekyll-feed
   - jekyll-assets
+  - jekyll-paginate
+  - jekyll-timeago
 exclude:
   - Gemfile
   - Gemfile.lock
   - 'node_modules'
-destination: public
-source: src
 sass:
   sass_dir: ./assets/css
   style: compressed
+
+paginate: 5
+paginate_path: '/sketchbook/page:num/'
+
+jekyll_timeago:
+  depth: 1
+  today: 'today'
+  yesterday: 'yesterday'
+  tomorrow: 'tomorrow'
+  and: 'and'
+  suffix: 'ago'
+  prefix: ''
+  suffix_future: ''
+  prefix_future: 'in'
+  years: 'years'
+  year: 'year'
+  months: 'months'
+  month: 'month'
+  weeks: 'weeks'
+  week: 'week'
+  days: 'days'
+  day: 'day'

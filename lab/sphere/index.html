@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Sphere</title>
+	<style ="text/css">
+	
+		#container {
+		    width:100px;
+		    height:100px;
+		    position:absolute; top:0; right:0; bottom:0; left:0;
+		    margin:auto;
+		    -webkit-perspective:1000;
+		}
+
+		#sphere {
+		    width:100%;
+		    height:100%;
+		    position:absolute;
+		    -webkit-transform-style: preserve-3d;
+		    -webkit-transfrom: translateZ(-100px) rotateX(-30deg) rotateY(-30deg);
+		}
+
+		.section {
+		    width:98px;
+		    height:98px;
+		    border:1px solid rgba(66,82,108,0.3);
+		    border-radius:100px;
+		    position:absolute;
+		    background:rgba(66,82,108,0.15);
+		}
+
+		#one       { -webkit-transform: rotateX(   0deg) translateZ(150px); }
+		#two       { -webkit-transform: rotateX(  36deg) translateZ(150px); }
+		#three     { -webkit-transform: rotateX(  72deg) translateZ(150px); }
+		#four      { -webkit-transform: rotateX( 108deg) translateZ(150px); }
+		#five      { -webkit-transform: rotateX( 144deg) translateZ(150px); }
+		#six       { -webkit-transform: rotateX( 180deg) translateZ(150px); }
+		#seven     { -webkit-transform: rotateX( 216deg) translateZ(150px); }
+		#eight     { -webkit-transform: rotateX( 252deg) translateZ(150px); }
+		#nine      { -webkit-transform: rotateX( 288deg) translateZ(150px); }
+		#ten       { -webkit-transform: rotateX( 324deg) translateZ(150px); }
+
+		.ring { -webkit-transform-style: preserve-3d; }
+
+		#ring-one     { -webkit-transform: rotateY(  0deg); }
+		#ring-two     { -webkit-transform: rotateY( 30deg); }
+		#ring-three   { -webkit-transform: rotateY( 60deg); }
+		#ring-four    { -webkit-transform: rotateY( 90deg); }
+		#ring-five    { -webkit-transform: rotateY(120deg); }
+		#ring-six     { -webkit-transform: rotateY(150deg); }
+		#ring-seven   { -webkit-transform: rotateY(180deg); }
+		#ring-eight   { -webkit-transform: rotateY(210deg); }
+		#ring-nine    { -webkit-transform: rotateY(240deg); }
+		#ring-ten     { -webkit-transform: rotateY(270deg); }
+		#ring-eleven  { -webkit-transform: rotateY(300deg); }
+		#ring-twelve  { -webkit-transform: rotateY(330deg); }
+	</style>
+	<script type="text/javascript" src="http://zachtemkin.us/resources/jQuery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $(document).mousemove(function(e) {
+		        var xy = 'rotateY' + '(' + e.pageX + 'deg' + ')' + '' + 'rotateX' + '(' + '-' + e.pageY + 'deg' + ')';
+		        $('#sphere').css('-webkit-transform', xy);
+		    });
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+	    <div id="sphere">
+	        <div class="ring" id="ring-one">
+	            <div class="section" id="one"></div>
+	            <div class="section" id="two"></div>
+	            <div class="section" id="three"></div>
+	            <div class="section" id="four"></div>
+	            <div class="section" id="five"></div>
+	            <div class="section" id="six"></div>
+	            <div class="section" id="seven"></div>
+	            <div class="section" id="eight"></div>
+	            <div class="section" id="nine"></div>
+	            <div class="section" id="ten"></div>
+	        </div>
+	        <div class="ring" id="ring-two">            
+	            <div class="section" id="one"></div>
+	            <div class="section" id="two"></div>
+	            <div class="section" id="three"></div>
+	            <div class="section" id="four"></div>
+	            <div class="section" id="five"></div>
+	            <div class="section" id="six"></div>
+	            <div class="section" id="seven"></div>
+	            <div class="section" id="eight"></div>
+	            <div class="section" id="nine"></div>
+	            <div class="section" id="ten"></div>
+	        </div>
+	        <div class="ring" id="ring-three">            
+	            <div class="section" id="one"></div>
+	            <div class="section" id="two"></div>
+	            <div class="section" id="three"></div>
+	            <div class="section" id="four"></div>
+	            <div class="section" id="five"></div>
+	            <div class="section" id="six"></div>
+	            <div class="section" id="seven"></div>
+	            <div class="section" id="eight"></div>
+	            <div class="section" id="nine"></div>
+	            <div class="section" id="ten"></div>
+	        </div>
+	        <div class="ring" id="ring-four">            
+	            <div class="section" id="one"></div>
+	            <div class="section" id="two"></div>
+	            <div class="section" id="three"></div>
+	            <div class="section" id="four"></div>
+	            <div class="section" id="five"></div>
+	            <div class="section" id="six"></div>
+	            <div class="section" id="seven"></div>
+	            <div class="section" id="eight"></div>
+	            <div class="section" id="nine"></div>
+	            <div class="section" id="ten"></div>
+	        </div>
+	        <div class="ring" id="ring-five">            
+	            <div class="section" id="one"></div>
+	            <div class="section" id="two"></div>
+	            <div class="section" id="three"></div>
+	            <div class="section" id="four"></div>
+	            <div class="section" id="five"></div>
+	            <div class="section" id="six"></div>
+	            <div class="section" id="seven"></div>
+	            <div class="section" id="eight"></div>
+	            <div class="section" id="nine"></div>
+	            <div class="section" id="ten"></div>
+	        </div>
+	        <div class="ring" id="ring-six">            
+	            <div class="section" id="one"></div>
+	            <div class="section" id="two"></div>
+	            <div class="section" id="three"></div>
+	            <div class="section" id="four"></div>
+	            <div class="section" id="five"></div>
+	            <div class="section" id="six"></div>
+	            <div class="section" id="seven"></div>
+	            <div class="section" id="eight"></div>
+	            <div class="section" id="nine"></div>
+	            <div class="section" id="ten"></div>
+	        </div>
+	        <div class="ring" id="ring-seven">
+	            <div class="section" id="one"></div>
+	            <div class="section" id="two"></div>
+	            <div class="section" id="three"></div>
+	            <div class="section" id="four"></div>
+	            <div class="section" id="five"></div>
+	            <div class="section" id="six"></div>
+	            <div class="section" id="seven"></div>
+	            <div class="section" id="eight"></div>
+	            <div class="section" id="nine"></div>
+	            <div class="section" id="ten"></div>
+	        </div>
+	        <div class="ring" id="ring-eight">            
+	            <div class="section" id="one"></div>
+	            <div class="section" id="two"></div>
+	            <div class="section" id="three"></div>
+	            <div class="section" id="four"></div>
+	            <div class="section" id="five"></div>
+	            <div class="section" id="six"></div>
+	            <div class="section" id="seven"></div>
+	            <div class="section" id="eight"></div>
+	            <div class="section" id="nine"></div>
+	            <div class="section" id="ten"></div>
+	        </div>
+	        <div class="ring" id="ring-nine">            
+	            <div class="section" id="one"></div>
+	            <div class="section" id="two"></div>
+	            <div class="section" id="three"></div>
+	            <div class="section" id="four"></div>
+	            <div class="section" id="five"></div>
+	            <div class="section" id="six"></div>
+	            <div class="section" id="seven"></div>
+	            <div class="section" id="eight"></div>
+	            <div class="section" id="nine"></div>
+	            <div class="section" id="ten"></div>
+	        </div>
+	        <div class="ring" id="ring-ten">            
+	            <div class="section" id="one"></div>
+	            <div class="section" id="two"></div>
+	            <div class="section" id="three"></div>
+	            <div class="section" id="four"></div>
+	            <div class="section" id="five"></div>
+	            <div class="section" id="six"></div>
+	            <div class="section" id="seven"></div>
+	            <div class="section" id="eight"></div>
+	            <div class="section" id="nine"></div>
+	            <div class="section" id="ten"></div>
+	        </div>
+	        <div class="ring" id="ring-eleven">            
+	            <div class="section" id="one"></div>
+	            <div class="section" id="two"></div>
+	            <div class="section" id="three"></div>
+	            <div class="section" id="four"></div>
+	            <div class="section" id="five"></div>
+	            <div class="section" id="six"></div>
+	            <div class="section" id="seven"></div>
+	            <div class="section" id="eight"></div>
+	            <div class="section" id="nine"></div>
+	            <div class="section" id="ten"></div>
+	        </div>
+	        <div class="ring" id="ring-twelve">            
+	            <div class="section" id="one"></div>
+	            <div class="section" id="two"></div>
+	            <div class="section" id="three"></div>
+	            <div class="section" id="four"></div>
+	            <div class="section" id="five"></div>
+	            <div class="section" id="six"></div>
+	            <div class="section" id="seven"></div>
+	            <div class="section" id="eight"></div>
+	            <div class="section" id="nine"></div>
+	            <div class="section" id="ten"></div>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>

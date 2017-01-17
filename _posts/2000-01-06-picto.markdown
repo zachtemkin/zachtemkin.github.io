@@ -1,0 +1,54 @@
+---
+layout: project
+title: "Picto"
+ID: "picto"
+img: "/assets/img/thumbnails/picto-thumb.png"
+imgBg: true
+brief: "An experiment on meditative play, users click or touch each of the four quadrants of a square to change the shape of that quadrant and make a new shape out of the whole. The shapes that can be made are simple yet very interpretive."
+roles: "Design; Front-end development"
+categories: portfolio
+appendix:
+- {link: "http://zachtemkin.us/lab/picto", text: "live site"}
+---
+
+I made Picto as an experiment on meditative play. Users click or touch each of the four quadrants of a square to change the shape of that quadrant and make a new shape out of the whole. The shapes that can be made are simple yet very interpretive. Users can name the shape they create by typing in the text box on the top of the screen. Picto gets users thinking about shapes in new ways and has animations that give it a satisfying, game-like feel.
+
+I want Picto to evoke a sense of playful discovery. I used animations, instead of language to communicate the functionality, having each quadrant flash initially to indicate that they are separate and touchable. The word Picto also changes in opacity to communicate that it is touchable, and on touching or hovering over the word it becomes clear that it is editable. There is also another hidden little feature you can discover by playing with picto [here.](http://zachtemkin.us/lab/picto/)
+
+Currently the naming feature isn't functional but the intention is for users to enter a name in the text box and hit enter, when they will then be redirected to a stream of other shapes people have named. Users will then have the option of filtering the stream by shape or by name to see how others have interpreted Picto.
+
+Picto works on modern web browsers on desktop computers and mobile.
+
+{% 
+  include project-image-container.html
+  caption = "Once the site loads, the corners of the square flash to draw the user's attention and indicate clickability."
+  images = "/assets/img/picto/pictoshot1.png"
+%}
+
+{% 
+  include project-image-container.html
+  caption = "'Picto' is displayed in a lighter color and hovering reveals the text can be changed."
+  images = "/assets/img/picto/pictoshot2.png"
+%}
+
+{% 
+  include project-image-container.html
+  caption = "The user can make a shape and give it a name based on what they think it looks like."
+  images = "/assets/img/picto/pictoshot4.png"
+%}
+
+{% 
+  include project-image-container.html
+  images = "/assets/img/picto/pictoshot5.png"
+%}
+
+{% 
+  include project-image-container.html
+  images = "/assets/img/picto/pictoshot6.png"
+%}
+
+{% 
+  include project-image-container.html
+  caption = "Because it is based on CSS3 transitions, Picto works on safari on iOS and other mobile browsers across platforms."
+  images = "/assets/img/picto/pictophone1.png, /assets/img/picto/pictophone2.png"
+%}

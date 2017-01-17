@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+<div class="post-content">
+	<div class="multi-button-container">
+	  {% if page.next.url %}
+	    {%
+	      include zt-button.html
+	      dir = "left"
+	      text = "previous post"
+	      link = page.next.url
+	      relUrl = true
+	      textButton = true
+	    %}
+	    <span class="bull">&bull;</span>
+	  {% endif %}
+	  {%
+	    include zt-button.html
+	    text = "sketchbook"
+	    link = "/sketchbook"
+	    relUrl = true
+	    textButton = true
+	  %}
+	  {% if page.previous.url %}
+	    <span class="bull">&bull;</span>
+	    {%
+	      include zt-button.html
+	      dir = "right"
+	      text = "next post"
+	      link = page.previous.url
+	      relUrl = true
+	      textButton = true
+	    %}
+	  {% endif %}
+	</div>
+	
+	<h1>{{ page.title }}</h1>
+	<div class="title">
+		{{ page.brief }}
+		{% if page.tags %}
+		<ul class="tags">
+			{% for tag in page.tags%}
+			<li class="tag"><a href="{{ '/sketchbook/tags.html/' | append: '#' | append: tag | prepend: site.github.url }}">{{ tag }}</a></li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+	</div>
+
+	{{ content }}
+	
+	{% for image in page.img %}
+		{%
+			include project-image-container.html
+			images = image
+		%}
+	{% endfor %}
+	<hr class="fin"/>
+
+	<div class="multi-button-container">
+	  {% if page.next.url %}
+	    {%
+	      include zt-button.html
+	      dir = "left"
+	      text = "previous post"
+	      link = page.next.url
+	      relUrl = true
+	      textButton = true
+	    %}
+	    <span>&bull;</span>
+	  {% endif %}
+	  {%
+	    include zt-button.html
+	    text = "sketchbook"
+	    link = "/sketchbook"
+	    relUrl = true
+	    textButton = true
+	  %}
+	  {% if page.previous.url %}
+	    <span>&bull;</span>
+	    {%
+	      include zt-button.html
+	      dir = "right"
+	      text = "next post"
+	      link = page.previous.url
+	      relUrl = true
+	      textButton = true
+	    %}
+	  {% endif %}
+	</div>
+</div>
+
+

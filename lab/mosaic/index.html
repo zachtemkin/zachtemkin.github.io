@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	<meta property="og:title" content="Mosaic" />
+	<meta property="og:url" content="http://zachtemkin.us/mosaic/" />
+	<link rel="shortcut icon" type="image/x-icon" href="http://zachtemkin.us/resources/mosicon.png" />	
+	<meta property="og:image" content="http://zachtemkin.us/resources/mosicon.png" />
+	<meta property="og:description" content="Roll your mouse over the tiles to generate new shapes." />
+	<style type="text/css">		
+		#container {position:absolute; top:0; bottom:0; left:0; right:0; margin:auto; height:600px;}
+		#container-inner {width:600px; height:600px; position:relative; margin:auto;}
+	</style>
+	<script type="text/javascript" src="http://zachtemkin.us/resources/jQuery.js"></script>	
+	<script type="text/javascript">
+	$(document).ready(function() {
+	    var unitSize = 60;
+	    var unitsWide = 10;
+	    var unitsTall = 10;
+	    var drawing = $('<div class="drawing"></div>').css({
+	        overflow: 'hidden',
+	        width: unitSize * unitsWide
+	    });
+	    var i = 0;
+	    for (; i < unitsWide * unitsTall; i++) {
+	        var randomColor = 'rgb(' + (Math.floor((300)*Math.random())) + ',' + (Math.floor((200)*Math.random())) + ',' + (Math.floor((100)*Math.random())) + ')';
+	
+	        $('<span class="square"></span>').css({
+	            display: 'block',
+	            float: 'left',
+	            width: unitSize,
+	            height: unitSize,
+	            'background-color': randomColor
+	        }).appendTo(drawing);
+	
+	    }
+	    drawing.appendTo($("div#container-inner"));
+		
+		var a = 0;
+		$('.square').mouseover(function() {
+			
+				if (a === 0) {
+					a = a + 1;
+					$(this).css("borderTopLeftRadius", "200px");
+				}
+				else if (a === 1) {
+					a = a + 1;
+					$(this).css("borderTopLeftRadius", "0");
+					$(this).css("borderTopRightRadius", "200px");
+				}
+				else if (a === 2) {
+					a = a + 1;
+					$(this).css("borderTopRightRadius", "0");
+					$(this).css("borderBottomRightRadius", "200px");
+				}
+				else if (a === 3) {
+					a = a + 1;
+					$(this).css("borderRadius", "0");
+					$(this).css("borderBottomLeftRadius", "200px");
+				}
+				else if (a === 4) {
+					a = a + 1;
+					$(this).css("borderBottomLeftRadius", "0");
+					$(this).css("borderBottomRightRadius", "0");
+					$(this).css("borderTopLeftRadius", "200px");
+					$(this).css("borderTopRightRadius", "200px");
+				}
+				else if (a === 5) {
+					a = a + 1;
+					$(this).css("borderTopRightRadius", "0");
+					$(this).css("borderBottomLeftRadius", "200px");
+				}
+				else if (a === 6) {
+					a = a + 1;
+					$(this).css("borderTopRightRadius", "200px");
+				}
+				else if (a === 7) {
+					a = a + 1;
+					$(this).css("borderTopLeftRadius", "0");
+				}
+				else if (a === 8) {
+					a = a + 1;
+					$(this).css("borderTopRightRadius", "0");
+					$(this).css("borderBottomLeftRadius", "0");
+					$(this).css("borderTopLeftRadius", "200px");
+					$(this).css("borderBottomRightRadius", "200px");
+				}
+				else if (a == 9) {
+					a = 0;
+					$(this).css("borderRadius", "0");
+				}
+			});
+		
+	});
+	</script>
+	</head>
+
+	<body>
+		<div id="container">
+    		<div id="container-inner"></div>
+		</div>
+	</body>
+	
+</html>​

@@ -1,0 +1,119 @@
+.project-content {
+  background-color: $white;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  position: relative;
+
+  @include breakpoint(screen-sm) {
+    margin-top: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.125em;
+    font-weight: 700;
+    line-height: 100%;
+    margin-bottom: .25em;
+    padding-bottom: .25em;
+    text-align: center;
+
+    @include breakpoint(screen-sm) {
+      font-size: 2.75em;
+      width: auto;
+    }
+  }
+
+  h2 {
+    @include content-column;
+    color: $zt-red;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: .02em;
+    margin: 0 auto .5em;
+    text-transform: capitalize;
+  }
+
+  h3 {
+    @include content-column;
+    color: darken($cool-gray-light, 40%);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 auto .25em;
+  }
+
+  p {
+    @include content-column;
+    @include font(secondary);
+    margin: 0 auto 1.25em;
+
+    @include breakpoint(screen-sm) {
+      font-size: 1.125em;
+      line-height: 2em;
+    }
+  }
+
+  blockquote {
+    @include content-column;
+    border-bottom: 1px solid $cool-gray-light;
+    border-top: 1px solid $cool-gray-light;
+    margin: 1.5em auto;
+    padding: 1.5em 3.5em;
+    position: relative;
+
+    > p {
+      @include font(primary);
+      color: $cool-gray-med;
+      font-size: 1.25em;
+      line-height: 1.6;
+      margin: 0;
+      max-width: 100%;
+    }
+
+    &::before {
+      @include font(serif);
+      color: $zt-red;
+      content: '\201c';
+      font-size: 4rem;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  ul,
+  ol {
+    @include content-column;
+    color: $zt-red;
+    margin: 0 auto 1.125rem;
+    padding-left: 1em;
+
+    li {
+      color: darken($cool-gray-light, 50%);
+      font-size: 1.25rem;
+      margin-bottom: .5em;
+      max-width: 100%;
+
+      @include breakpoint(screen-md) {
+        font-size: 1.5rem;
+        max-width: 60%;
+      }
+    }
+  }
+
+  ul > li {
+    list-style-image: url(../img/zt-bullet.svg);
+  }
+
+  ol > li {
+    list-style-type: decimal;
+  }
+
+}
+
+.fin {
+  @include content-column;
+  border: 0;
+  border-top: 1px solid $cool-gray-light;
+  margin: 4em auto 2em;
+}

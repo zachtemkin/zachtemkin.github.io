@@ -1,0 +1,181 @@
+html {
+    background-image:url('http://zachtemkin.us/resources/bgw.png');
+}
+
+#container {
+    position:absolute; top:0; left:0; bottom:0; right:0;
+    width:450px;
+    height:450px;
+    margin:auto;
+    background:transparent;
+}
+
+#container-inner {
+    position:relative;
+    height:450px;
+    margin:auto;
+}
+
+#outter-rect {
+    width:450px;
+    height:450px;
+}
+
+#inner-rect {
+    width:225px;
+    height:450px;
+    margin:auto;
+}
+
+#small-rect1-out {
+    position:absolute; top:0; left:0; bottom:0; right:330px;
+    width:120px;
+    height:60px;
+    margin:auto;
+}
+
+#small-rect1 {
+    position:relative;
+    height:60px;
+    margin:auto;
+}
+
+#small-rect2-out {
+    position:absolute; top:0; left:330px; bottom:0; right:0;
+    width:120px;
+    height:60px;
+    margin:auto;
+}
+
+#small-rect2 {
+    position:relative;
+    height:60px;
+    margin:auto;
+}
+
+#sq1 {
+    width:225px;
+    height:225px;
+    background:red;
+    -ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    opacity:.5;
+    -moz-animation:pulseD 1.5s linear infinite alternate; 
+    -webkit-animation:pulseD 1.5s linear infinite alternate;
+}
+
+#sq2 {
+    width:225px;
+    height:225px;
+    background:blue;
+    -ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    opacity:.5;
+    -moz-animation:pulse 1.5s linear infinite alternate; 
+    -webkit-animation:pulse 1.5s linear infinite alternate; 
+}
+
+#sq3 {
+    width:60px;
+    height:60px;
+    background:red;
+    -ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    opacity:.5;
+}
+
+#sq4 {
+    position:absolute; top:0; left:60px; bottom:0; right:0;
+    width:60px;
+    height:60px;
+    background:blue;
+    -ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    opacity:.5;
+}
+
+#sq5 {
+    width:60px;
+    height:60px;
+    background:red;
+    -ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    opacity:.5;
+}
+
+#sq6 {
+    position:absolute; top:0; left:60px; bottom:0; right:0;
+    width:60px;
+    height:60px;
+    background:blue;
+    -ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    opacity:.5;
+}
+
+@-webkit-keyframes pulse
+{
+from {-webkit-transform: rotate(45deg) translate(0);}
+to {-webkit-transform: rotate(45deg) translate(-10px,-10px);}
+}
+
+@-moz-keyframes pulse
+{
+from {-moz-transform: rotate(45deg) translate(0);}
+to {-moz-transform: rotate(45deg) translate(-10px,-10px);}
+}
+
+@-webkit-keyframes pulseD
+{
+from {-webkit-transform: rotate(45deg) translate(0);}
+to {-webkit-transform: rotate(45deg) translate(10px,10px);}
+}
+
+@-moz-keyframes pulseD
+{
+from {-moz-transform: rotate(45deg) translate(0);}
+to {-moz-transform: rotate(45deg) translate(10px,10px);}
+}
+
+.hpulseR{
+    -moz-animation:hpulseR 1.5s linear infinite alternate; 
+    -webkit-animation:hpulseR 1.5s linear infinite alternate; 
+}
+
+@-moz-keyframes hpulseR{
+    from {-moz-transform: rotate(45deg) translate(0);}
+    to {-moz-transform: rotate(45deg) translate(-10px,10px);}        
+}
+
+@-webkit-keyframes hpulseR{
+    from {-webkit-transform: rotate(45deg) translate(0);}
+    to {-webkit-transform: rotate(45deg) translate(-10px,10px);}        
+}
+
+.hpulseL{
+    -moz-animation:hpulseL 1.5s linear infinite alternate; 
+    -webkit-animation:hpulseL 1.5s linear infinite alternate; 
+}
+
+@-moz-keyframes hpulseL{
+    from {-moz-transform: rotate(45deg) translate(0);}
+    to {-moz-transform: rotate(45deg) translate(10px,-10px);}  
+}
+
+@-webkit-keyframes hpulseL{
+    from {-webkit-transform: rotate(45deg) translate(0);}
+    to {-webkit-transform: rotate(45deg) translate(10px,-10px);}  
+}
+​

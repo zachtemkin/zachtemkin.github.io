@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400);
+
+body {
+    font-family: 'Lato', helvetica, arial, sans-serif;
+    font-weight: 100; 
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.door {
+    position: relative;
+    height: 100%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+img {
+    position: relative;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+#header {
+    position: relative;
+    height: 150px;
+    background-color: #333;
+    z-index: 100;
+}
+
+#header p {
+    position: relative;
+    font-size: 75px;
+    line-height: 140px;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.0);
+    color: #f4ab5b;
+}
+
+#i {
+    background-color: #c44d4d;
+}
+#i .door {
+    background-image: url(../../resources/door1.png);
+}
+
+#ii {
+    background-color: #f3d3d0;
+}
+#ii .door {
+    background-image: url(../../resources/door2.png);
+}
+
+#iii {
+    background-color: #dd8558;
+}
+#iii .door {
+    background-image: url(../../resources/door3.png);
+}
+
+#iv {
+    background-color: #999998;
+}
+#iv .door {
+    background-image: url(../../resources/door4.png);
+}
+
+#v {
+    background-color: #B67C82;
+}
+#v .door {
+    background-image: url(../../resources/door5.png); 
+}
+
+@media screen and (max-width: 537px) {
+    #header {
+        height: 100px;
+    }
+
+    #header p {
+        font-size: 36px;
+        line-height: 95px;
+    }
+}

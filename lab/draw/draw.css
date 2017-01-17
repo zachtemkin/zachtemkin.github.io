@@ -1,0 +1,316 @@
+	* {
+		margin:0;
+		padding:0;
+	}
+
+	body {
+    	background-image:url('http://zachtemkin.us/resources/drawbg.png');
+		background-color:#111;
+		font-family:"georgia", times, serif;
+		cursor:default;
+	}
+	
+	#log {
+		position:absolute; top:50px;
+		height:25px;
+		padding:5px;
+		background:white;
+		color:black;
+		display:none;
+	}
+	
+	#container {
+		width:1192px;
+		height:500px;
+		margin:140px auto 0 auto;
+		padding:0 43px 140px 43px;
+	}
+	
+	#alert {
+		height:25px;
+		padding:5px;
+		color:white;
+		background:black;
+		position:absolute; top:50px;
+	}
+	
+	#canvas {
+		width:900px;
+    	height:500px;
+    	background:white;
+    	box-shadow: 0px 2px 10px rgba(0,0,0,0.7);
+		float:left;
+		cursor:default;
+	}
+	
+	.noslct {
+		-webkit-touch-callout:none;
+		-webkit-user-select:none;
+		-khtml-user-select:none;
+		-moz-user-select:none;
+		-ms-user-select:none;
+	}
+	
+	#toolbox {
+		width:202px;
+		height:510px;
+		margin-right:90px;
+		float:left;
+	}
+	
+	#title {
+		font:300 16px "georgia";
+		color:#bbb;
+		width:115px;
+		height:40px;
+		margin:40px 0 0 18px;
+		padding-left:9px;
+		border:none;
+		border-radius:10px;
+		box-shadow:0px 1px 3px rgba(0,0,0,0.6) inset;
+		outline:none;
+	}
+	
+	.head {
+		font:italic 300 20px "georgia", times, serif;
+		text-shadow:0px 2px 1px rgba(0,0,0,0.7);
+		color:white;
+		text-align:center;
+		width:200px;
+		height:20px;
+		margin:auto;
+		padding-bottom:50px;
+	}
+	
+	#shape-tools {
+		width:202px;
+		height:250px;
+		margin-bottom:40px;
+		padding:0 8px 0 8px;
+	}
+	
+	.tool {
+		width:20px;
+		height:20px;
+		margin-bottom:30px;
+		margin-right:36px;
+		background:white;
+		box-shadow:0px 2px 3px rgba(0,0,0,1);
+		float:left;
+	}
+	
+	.toolhover {
+		-webkit-transform:translateY(-3px);
+		-moz-transform:translateY(-3px);
+		-ms-transform:translateY(-3px);
+		-o-transform:translateY(-3px);
+		background:rgb(158,203,260);
+	}
+	
+	.selected {
+	    background:rgb(48,154,258);
+	}
+	
+	#tool1 { 
+	    border-top-left-radius:20px;
+	}
+
+	#tool2 { 
+		border-top-right-radius:20px;
+	}
+	
+	#tool3 {
+		border-bottom-left-radius:20px;
+	}
+	
+	#tool4 {
+		border-bottom-right-radius:20px;
+	}
+	
+	#tool5 {
+		border-top-left-radius:20px;
+		border-top-right-radius:20px;
+	}
+	
+	#tool6 {
+		border-top-right-radius:20px;
+		border-bottom-right-radius:20px;
+	}
+	
+	#tool7 {
+		border-bottom-left-radius:20px;
+		border-bottom-right-radius:20px;
+	}
+	
+	#tool8 {
+		border-top-left-radius:20px;
+		border-bottom-left-radius:20px;
+	}
+	
+	#tool9 {
+		border-top-left-radius:20px;
+		border-top-right-radius:20px;
+		border-bottom-left-radius:20px;
+	}
+	
+	#tool10 {
+		border-top-left-radius:20px;
+		border-top-right-radius:20px;
+		border-bottom-right-radius:20px;
+	}
+	
+	#tool11 {
+		border-top-left-radius:20px;
+		border-bottom-right-radius:20px;
+		border-bottom-left-radius:20px;
+	}
+	
+	#tool12 {
+		border-top-right-radius:20px;
+		border-bottom-left-radius:20px;
+		border-bottom-right-radius:20px;
+	}
+	
+	#tool13 {
+		border-top-right-radius:20px;
+		border-bottom-left-radius:20px;
+	}
+	
+	#tool14 {
+		border-bottom-right-radius:20px;
+		border-top-left-radius:20px;
+	}
+	
+	#tool15 {
+		border-radius:20px;
+	}
+	
+	#tool16 {
+		border-radius:0;
+	}
+
+	#settings {
+		width:203px;
+		height:200px;
+		float:left;
+	}
+	
+	.setting {
+		font-size:16px;
+		text-align:center;
+		text-decoration:none;
+		color:white;
+		text-shadow:0px -1px 0px rgba(0,0,0,0.7);
+		padding-top:10px;
+		border-radius:10px;
+		float:left;
+	}
+	
+	#eraser {
+		background:rgb(255,130,171);
+		box-shadow:0px 6px 0px rgb(140,78,98);
+		width:90px;
+		height:30px;
+		margin-right:22px;
+	}
+		
+	#clear {
+		background:rgb(255,48,48);
+		box-shadow:0px 6px 0px rgb(143,40,40);
+		width:90px;
+		height:30px;
+	}
+	
+	#save {
+		background:rgb(28,134,238);
+		box-shadow:0px 6px 0px rgb(27,80,133);
+		width:60px;
+		height:30px;
+		margin-top:40px;
+	}
+	
+	.bttnDwn {
+        -webkit-transform: translateY(3px);
+        -moz-transform: translateY(3px);
+        -ms-transform: translateY(3px);
+        -o-transform: translateY(3px);
+    }
+
+	.saved {
+		position:absolute;
+		display:block;
+		height:25px;
+		width:150px;
+		margin:50px 0 0 0;
+		font-size:20px;
+		text-align:left;
+		text-decoration:underline;
+		color:#cfcfcf;
+		text-shadow:0px -2px 1px rgba(0,0,0,0.5);
+	}
+	
+	a.saved:hover {
+		font-style:italic;
+	}
+	
+	#info {
+		position:aboslute;
+		width:20px;
+		height:19px;
+		margin:50px 0 0 165px;
+		padding-top:1px;
+		float:left;
+		color:white;
+		border:3.5px solid white;
+		border-radius:40px;
+		font:italic 300 16px "georgia", times, serif;
+		text-align:center;
+		text-shadow:0px -2px 1px rgba(0,0,0,0.5);
+		box-shadow:0px -2px 1px rgba(0,0,0,0.5);
+	}
+	
+	.infohover {
+		-webkit-transform:translateY(-2px);
+		-moz-transform:translateY(-2px);
+		-ms-transform:translateY(-2px);
+		-o-transform:translateY(-2px);
+	}
+	
+	#info-sheet {
+		display:none;
+		font:300 16px "helvetica neue", helvetica, arial, sans-serif;
+		position:absolute;
+		width:250px;
+		height:140px;
+		margin:285px 0 100px -5px;
+		background:rgba(0,0,0,0.9);
+		color:white;
+		border:5px solid white;
+		border-radius:10px;
+		z-index:1;
+		box-shadow:0px 2px 5px rgba(0,0,0,0.6);
+	}
+	
+	#shortcuts {
+		display:block;
+		font-weight:500;
+		margin:15px;
+		float:left;
+	}
+	
+	ul {
+		position:absolute;
+		display:block;
+		list-style:none;
+		float:left;
+	}
+	
+	#shortcut-list {
+		margin:45px 0 0 15px;
+	}
+	
+	#credits {
+		font:500 14px "helvetica neue", helvetica, arial, sans-serif;
+		margin:105px 0 0 15px;
+		color:rgba(255,255,255,0.2);
+	}

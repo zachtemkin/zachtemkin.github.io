@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Cube</title>
+	<style type="text/css">
+		body {
+			background-image:url("http://zachtemkin.us/resources/bluegray.png");
+		}
+		#container {
+		    width:200px;
+		    height:350px;
+		    position:absolute; top:0; left:0; bottom:0; right:0;
+		    margin:auto;
+		    -webkit-perspective:1000;
+		    -moz-perspective:1000;
+		}
+
+		#prism {
+		    width:100%;
+		    height:100%;
+		    position: absolute;
+		    -webkit-transform-style: preserve-3d;
+		    -moz-transform-style: preserve-3d;
+
+
+		    -webkit-transform: rotateX(0deg) rotateY(0deg);
+		    -moz-transform: rotateX(0deg) rotateY(0deg);
+		}
+
+		.face {
+			width: 300px;
+			height: 300px;
+		    border:2px solid #e7e7e7;
+		    position:absolute;
+		    color:rgb(66,82,108);
+		    font:bold 12px helvetica;
+		    text-align:center;
+		    line-height:50px;
+		    background-color:rgba(220,220,220,0.3);
+		}
+
+		#front { 
+			-webkit-transform: rotateX(0deg) translateZ(150px);
+			   -moz-transform: rotateX(0deg) translateZ(150px);   
+
+		}
+
+		#back { 
+			-webkit-transform: rotateX(-180deg) translateZ(150px); 
+			   -moz-transform: rotateX(-180deg) translateZ(150px); 
+		}
+
+		#left { 
+			-webkit-transform: rotateY(-90deg) translateZ(150px); 
+			   -moz-transform: rotateY(-90deg) translateZ(150px);  
+		}
+
+		#right  { 
+			-webkit-transform: rotateY(90deg) translateZ(150px); 
+			   -moz-transform: rotateY(90deg) translateZ(150px); 
+		}
+
+		#top { 
+			-webkit-transform: rotateX(90deg) translateZ(150px); 
+			   -moz-transform: rotateX(90deg) translateZ(150px);  
+		}
+
+		#bottom {
+			-webkit-transform: rotateX(-90deg) translateZ(150px); 
+			   -moz-transform: rotateX(-90deg) translateZ(150px); 
+		}
+		
+		/*.moving {
+			-webkit-animation: movePrism 5s 1 linear;
+		}
+		
+		@-webkit-keyframes movePrism {
+			0%   { -webkit-transform: translateZ(-5000px) rotateX(90deg); }
+			25%  { -webkit-transform: translateZ(-1000px) rotateX(75deg); }
+			50%  { -webkit-transform: translateZ(-1000px) rotateX}
+			100% { -webkit-transform: translateZ(    0px) rotateX( 0deg); } 
+		}*/
+		
+	</style>
+	<script type="text/javascript" src="http://zachtemkin.us/resources/jQuery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		if (window.DeviceMotionEvent !== undefined) {
+    	window.ondevicemotion = function(event) {
+    		ax = event.accelerationIncludingGravity.x * 1;
+			ay = event.accelerationIncludingGravity.y * 1;
+			az = event.accelerationIncludingGravity.z * 1;		
+			ai = Math.round(event.interval * 100) / 100;
+			rR = event.rotationRate;
+			if (rR != null) {
+				arAlpha = Math.abs(rR.alpha);
+				arBeta = Math.abs(rR.beta);
+				arGamma = Math.abs(rR.gamma);
+			}
+		}
+
+		window.ondeviceorientation = function(event) {
+			alpha = event.alpha;
+			beta = event.beta;
+			gamma = event.gamma;
+		}	
+
+		setInterval( function() {
+			if (arBeta > arAlpha) {
+				$('#prism').css({'-webkit-transform': 'rotateY(' + ax*5 + 'deg) rotateX(0deg)'});
+			} else {
+				$('#prism').css({'-webkit-transform': 'rotateX(' + ay*5 + 'deg) rotateY(0deg)'}); 
+			}	
+		}, delay);	
+    }
+    
+    $('html').on('mousemove', function(e) {
+        $('#prism').css({'-webkit-transform': 'rotateY(' + e.pageX + 'deg) rotateX( -' + e.pageY + 'deg)'});
+    });
+});
+	</script>
+</head>
+<body>
+	<div id="container">
+	    <div id="prism" class="moving">
+	        <div class="face" id="front"></div>
+	        <div class="face" id="back"></div>
+	        <div class="face" id="left"></div>
+	        <div class="face" id="right"></div>
+	        <div class="face" id="top"></div>
+	        <div class="face" id="bottom"></div>
+	    </div>
+	</div>
+</body>
+</html>	
