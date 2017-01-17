@@ -31,7 +31,7 @@ layout: default
 			<ul class="tags">
 				{% for tag in post.tags%}
 				<li class="tag">
-					<a href="{{ '/sketchbook/tags.html/' | append: '#' | append: tag | prepend: site.github.url }}">{{ tag }}</a>
+					<a href="{{ '/sketchbook/tags.html' | append: '#' | append: tag | prepend: site.github.url }}">{{ tag }}</a>
 				</li>
 				{% endfor %}
 			</ul>
