@@ -3,17 +3,17 @@ layout: default
 ---
 
 <div class="post-content">
-	<div class="multi-button-container">
+	<div class="pagination multi-button-container inner">
 	  {% if page.next.url %}
 	    {%
 	      include zt-button.html
 	      dir = "left"
-	      text = "previous post"
+	      text = "previous"
 	      link = page.next.url
 	      relUrl = true
 	      textButton = true
 	    %}
-	    <span class="bull">&bull;</span>
+	  	<span class="bull">&bull;</span>
 	  {% endif %}
 	  {%
 	    include zt-button.html
@@ -23,11 +23,11 @@ layout: default
 	    textButton = true
 	  %}
 	  {% if page.previous.url %}
-	    <span class="bull">&bull;</span>
+	  	<span class="bull">&bull;</span>
 	    {%
 	      include zt-button.html
 	      dir = "right"
-	      text = "next post"
+	      text = "next"
 	      link = page.previous.url
 	      relUrl = true
 	      textButton = true
@@ -57,17 +57,17 @@ layout: default
 	{% endfor %}
 	<hr class="fin"/>
 
-	<div class="multi-button-container">
+	<div class="pagination multi-button-container inner">
 	  {% if page.next.url %}
 	    {%
 	      include zt-button.html
 	      dir = "left"
-	      text = "previous post"
+	      text = "previous"
 	      link = page.next.url
 	      relUrl = true
 	      textButton = true
 	    %}
-	    <span>&bull;</span>
+	  	<span class="bull">&bull;</span>
 	  {% endif %}
 	  {%
 	    include zt-button.html
@@ -77,11 +77,11 @@ layout: default
 	    textButton = true
 	  %}
 	  {% if page.previous.url %}
-	    <span>&bull;</span>
+	  	<span class="bull">&bull;</span>
 	    {%
 	      include zt-button.html
 	      dir = "right"
-	      text = "next post"
+	      text = "next"
 	      link = page.previous.url
 	      relUrl = true
 	      textButton = true

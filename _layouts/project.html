@@ -5,12 +5,12 @@ layout: default
 <div class="project-content">
   {% assign back_url = "/#" | append: page.ID %}
 
-  <div class="multi-button-container">
+  <div class="pagination multi-button-container inner">
     {% if page.previous.url %}
       {%
         include zt-button.html
         dir = "left"
-        text = "previous project"
+        text = "previous"
         link = page.previous.url
         relUrl = true
         textButton = true
@@ -29,7 +29,7 @@ layout: default
       {%
         include zt-button.html
         dir = "right"
-        text = "next project"
+        text = "next"
         link = page.next.url
         relUrl = true
         textButton = true
@@ -62,12 +62,12 @@ layout: default
 
   <hr class="fin"/>
   
-  <div class="multi-button-container">
+  <div class="pagination multi-button-container inner">
     {% if page.previous.url %}
       {%
         include zt-button.html
         dir = "left"
-        text = "previous project"
+        text = "previous"
         link = page.previous.url
         relUrl = true
         textButton = true
@@ -86,7 +86,7 @@ layout: default
       {%
         include zt-button.html
         dir = "right"
-        text = "next project"
+        text = "next"
         link = page.next.url
         relUrl = true
         textButton = true

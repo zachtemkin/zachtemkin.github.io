@@ -1,0 +1,65 @@
+.pagination {
+  align-items: center;
+  display: flex;
+  font-size: 85%;
+  justify-content: center;
+  max-width: 100%;
+  position: relative;
+
+  @include breakpoint(screen-sm) {
+    font-size: 100%;
+  }
+
+  .slide-button {
+    line-height: 3.125rem;
+    z-index: 100;
+
+    &--left {
+      left: 0;
+      position: absolute;
+    }
+
+    &--right {
+      position: absolute;
+      right: 0;
+    }
+
+    &::before,
+    &::after {
+      line-height: 3.6rem;
+    }
+  }
+
+  span,
+  h3,
+  .slide-button {
+    // width: calc(100%/5);
+  }
+
+  span {
+    flex-grow: .25;
+
+    @include breakpoint(screen-sm) {
+      flex-grow: 2;
+    }
+  }
+
+  h3 {
+    align-self: center;
+    // left: 0;
+    padding: 10px 0 12px;
+    // position: absolute;
+    // right: 0;
+    z-index: 0;
+
+    // &::before {
+    //   color: $zt-red;
+    //   content: '\2022';
+    // }
+
+    // &::after {
+    //   color: $zt-red;
+    //   content: '\2022';
+    // }
+  }
+}
