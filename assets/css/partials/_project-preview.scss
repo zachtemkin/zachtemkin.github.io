@@ -27,6 +27,7 @@
 
   .img-wrapper {
     background-color: lighten($cool-gray-light, 5%);
+    display: block;
     overflow: hidden;
     transition: background-color .4s ease-in-out;
     width: 100%;
