@@ -42,6 +42,14 @@
     margin: 0 auto .25em;
   }
 
+  h4 {
+    @include content-column;
+    color: $cool-gray-dark;
+    font-size: 1.75em;
+    font-weight: 500;
+    margin: 0 auto .5em;
+  }
+
   p {
     @include content-column;
     @include font(secondary);
