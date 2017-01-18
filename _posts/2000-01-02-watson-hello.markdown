@@ -155,7 +155,6 @@ We quickly created paper prototypes of these concepts to roughly validate our di
 	include project-image-container.html
 	images = "/assets/img/watson-hello/paper-proto-1.gif, /assets/img/watson-hello/paper-proto-2.gif"
 	rel = true
-	featured = true
 %}
 
 After some tweaks and more testing with wireframes it was time to start creating higher fidelity mock-ups and ultimately putting together a prototype. Our front-end developer built some simple proofs of concept that demonstrated use of API’s and I built a demonstration of the user experience using Facebook’s Origami.
@@ -166,6 +165,12 @@ After some tweaks and more testing with wireframes it was time to start creating
 %}
 
 <p><iframe src="https://player.vimeo.com/video/192566953?byline=0&portrait=0" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+
+{%
+	include project-image-container.html
+	images = "/assets/img/watson-hello/screens/screen-1.png, /assets/img/watson-hello/screens/screen-2.png, /assets/img/watson-hello/screens/screen-3.png, /assets/img/watson-hello/screens/screen-4.png"
+	featured = true
+%}
 
 ## Reflect 
 

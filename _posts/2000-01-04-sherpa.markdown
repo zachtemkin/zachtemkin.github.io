@@ -54,6 +54,7 @@ Besides filtering sherpas based on interest, a user can use the menus on the lef
   include project-image-container.html
   caption = "In this view users book a date and time for their sherpa meeting."
   images = "/assets/img/sherpa/sherp-03.png"
+  border = true
 %}
 
 This view contains a bio provided by the sherpa as well as an overview of their interests, as was on the sherpa card. At the bottom, the user can choose from a list of times for a video call or expedition. If the user didn't choose a date in the previous view, the app will show times for the week with each list of times delineated with a heading containing the day of the week.

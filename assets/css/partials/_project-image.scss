@@ -43,9 +43,12 @@
   }
 
   .image-wrapper {
-    border: 1px solid $cool-gray-light;
     text-align: center;
     width: 100%;
+
+    &.border {
+      border: 1px solid $cool-gray-light;
+    }
 
     &:not(:last-child) {
       margin-bottom: .25rem;

@@ -26,6 +26,7 @@ I would have liked to do a complete re-branding however this wasn't in the clien
 	featured = true
 	caption = "The logo in various color settings."
 	images = "/assets/img/pt/ptlogo1.png, /assets/img/pt/ptlogo2.png, /assets/img/pt/ptlogo3.png"
+	border = true
 %}
 
 {%
@@ -33,6 +34,7 @@ I would have liked to do a complete re-branding however this wasn't in the clien
 	featured = true
 	caption = "The business cards feature the logo mark and wave on one side. The other features some auxiliary iconography I developed which could be used in other brand collateral."
 	images = "/assets/img/pt/ptcardback.png, /assets/img/pt/ptcardfront.png"
+	border = true
 %}
 
 {%
@@ -41,4 +43,5 @@ I would have liked to do a complete re-branding however this wasn't in the clien
 	side-caption = true
 	caption = "Various concepts I presented to the client"
 	images = "/assets/img/pt/ptconcepts.png"
+	border = true
 %}
