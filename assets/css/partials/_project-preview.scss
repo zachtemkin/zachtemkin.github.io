@@ -1,18 +1,21 @@
 .project-list {
-  background-color: $zt-purple;
+  // background-color: $zt-purple;
   margin-top: 1.5em;
   overflow: hidden;
 }
 
 .project-preview {
   background-color: $white;
-  margin: 5px auto 0;
+  border-bottom: 1px solid $cool-gray-light;
+  // margin: 5px auto 0;
+  margin-bottom: 3rem;
   min-height: 320px;
   overflow: hidden;
   position: relative;
   width: 100%;
 
   @include breakpoint(screen-sm) {
+    border-bottom: 0;
     border-top: 1px solid $cool-gray-light;
     display: block;
     margin: 0;
