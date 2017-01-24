@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="post-content">
-	<div class="pagination multi-button-container inner">
+	<p class="pagination multi-button-container">
 	  {% if page.next.url %}
 	    {%
 	      include zt-button.html
@@ -13,7 +13,7 @@ layout: default
 	      relUrl = true
 	      textButton = true
 	    %}
-	  	<span class="bull">&bull;</span>
+	  	<!-- <span class="bull">&bull;</span> -->
 	  {% endif %}
 	  {%
 	    include zt-button.html
@@ -23,7 +23,7 @@ layout: default
 	    textButton = true
 	  %}
 	  {% if page.previous.url %}
-	  	<span class="bull">&bull;</span>
+	  	<!-- <span class="bull">&bull;</span> -->
 	    {%
 	      include zt-button.html
 	      dir = "right"
@@ -33,7 +33,7 @@ layout: default
 	      textButton = true
 	    %}
 	  {% endif %}
-	</div>
+	</p>
 	
 	<h1>{{ page.title }}</h1>
 	<div class="title">
@@ -57,7 +57,7 @@ layout: default
 	{% endfor %}
 	<hr class="fin"/>
 
-	<div class="pagination multi-button-container inner">
+	<p class="pagination multi-button-container">
 	  {% if page.next.url %}
 	    {%
 	      include zt-button.html
@@ -67,7 +67,7 @@ layout: default
 	      relUrl = true
 	      textButton = true
 	    %}
-	  	<span class="bull">&bull;</span>
+	  	<!-- <span class="bull">&bull;</span> -->
 	  {% endif %}
 	  {%
 	    include zt-button.html
@@ -77,7 +77,7 @@ layout: default
 	    textButton = true
 	  %}
 	  {% if page.previous.url %}
-	  	<span class="bull">&bull;</span>
+	  	<!-- <span class="bull">&bull;</span> -->
 	    {%
 	      include zt-button.html
 	      dir = "right"
@@ -87,7 +87,7 @@ layout: default
 	      textButton = true
 	    %}
 	  {% endif %}
-	</div>
+	</p>
 </div>
 
 

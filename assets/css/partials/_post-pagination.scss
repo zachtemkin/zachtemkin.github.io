@@ -10,6 +10,14 @@
     font-size: 100%;
   }
 
+  &:not(:last-child) {
+    border-bottom: 1px solid $cool-gray-light;
+  }
+
+  &.blog-home {
+    border-bottom: 0;
+  }
+
   .slide-button {
     line-height: 3.125rem;
     z-index: 100;

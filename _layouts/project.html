@@ -5,7 +5,7 @@ layout: default
 <div class="project-content">
   {% assign back_url = "/#" | append: page.ID %}
 
-  <div class="pagination multi-button-container inner">
+  <p class="pagination multi-button-container">
     {% if page.previous.url %}
       {%
         include zt-button.html
@@ -15,7 +15,7 @@ layout: default
         relUrl = true
         textButton = true
       %}
-      <span>&bull;</span>
+      <!-- <span>&bull;</span> -->
     {% endif %}
     {%
       include zt-button.html
@@ -25,7 +25,7 @@ layout: default
       textButton = true
     %}
     {% if page.next.url %}
-      <span>&bull;</span>
+      <!-- <span>&bull;</span> -->
       {%
         include zt-button.html
         dir = "right"
@@ -35,7 +35,8 @@ layout: default
         textButton = true
       %}
     {% endif %}
-  </div>
+  </p>
+
   <div class="title">
     <h1>{{ page.title }}</h1>
     <p>{{ page.brief }}</p>
@@ -62,7 +63,7 @@ layout: default
 
   <hr class="fin"/>
   
-  <div class="pagination multi-button-container inner">
+  <p class="pagination multi-button-container">
     {% if page.previous.url %}
       {%
         include zt-button.html
@@ -72,7 +73,7 @@ layout: default
         relUrl = true
         textButton = true
       %}
-      <span>&bull;</span>
+      <!-- <span>&bull;</span> -->
     {% endif %}
     {%
       include zt-button.html
@@ -82,7 +83,7 @@ layout: default
       textButton = true
     %}
     {% if page.next.url %}
-      <span>&bull;</span>
+      <!-- <span>&bull;</span> -->
       {%
         include zt-button.html
         dir = "right"
@@ -92,5 +93,5 @@ layout: default
         textButton = true
       %}
     {% endif %}
-  </div>
+  </p>
 </div>
