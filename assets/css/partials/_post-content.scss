@@ -1,4 +1,5 @@
 .post-content {
+  margin-top: 2rem;
   padding-bottom: 2rem;
 
   @include breakpoint(screen-sm) {
@@ -6,6 +7,7 @@
   }
 
   h1 {
+    border-bottom: 0;
     font-size: 2.125em;
     font-weight: 700;
     line-height: 100%;

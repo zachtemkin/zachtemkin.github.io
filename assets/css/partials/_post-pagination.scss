@@ -12,10 +12,16 @@
 
   &:not(:last-child) {
     border-bottom: 1px solid $cool-gray-light;
+    border-top: 1px solid $cool-gray-light;
+
+    @include breakpoint(screen-sm) {
+      border-top: 0;
+    }
   }
 
   &.blog-home {
     border-bottom: 0;
+    border-top: 0;
   }
 
   .slide-button {

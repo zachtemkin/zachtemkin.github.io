@@ -17,7 +17,7 @@ layout: default
 	  {% endif %}
 	  {%
 	    include zt-button.html
-	    text = "sketchbook"
+	    text = "Blog Home"
 	    link = "/sketchbook"
 	    relUrl = true
 	    textButton = true
@@ -35,10 +35,11 @@ layout: default
 	  {% endif %}
 	</p>
 	
-	<h1>{{ page.title }}</h1>
 	<div class="title">
+		<h1>{{ page.title }}</h1>
 		{{ page.brief }}
 		{% if page.tags %}
+		<p>{{ page.date | date: "%B %-d %Y"}}</p>
 		<ul class="tags">
 			{% for tag in page.tags%}
 			<li class="tag"><a href="{{ '/sketchbook/tags.html' | append: '#' | append: tag | prepend: site.github.url }}">{{ tag }}</a></li>
@@ -71,7 +72,7 @@ layout: default
 	  {% endif %}
 	  {%
 	    include zt-button.html
-	    text = "sketchbook"
+	    text = "Blog Home"
 	    link = "/sketchbook"
 	    relUrl = true
 	    textButton = true
