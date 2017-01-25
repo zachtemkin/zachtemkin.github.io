@@ -42,7 +42,11 @@ h6 {
 //content 
 
 p {
+  font-size: 102%;
   line-height: 1.5;
+  @include breakpoint(screen-sm) {
+    font-size: 100%;
+  }
 }
 
 strong {
