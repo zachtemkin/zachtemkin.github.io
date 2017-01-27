@@ -58,7 +58,8 @@
     }
 
     &:active {
-      background-color: $cool-gray-light;
+      background-color: $transparent;
+      color: darken($cool-gray-dark, 30%);
     }
 
     @include breakpoint(screen-sm) {
