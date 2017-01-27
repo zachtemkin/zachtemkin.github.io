@@ -143,12 +143,12 @@ $(document).ready(function() {
     });
 	
 //shortcuts
-    $(document).shortkeys({
-        'e': function() {
-            $('#eraser').click();
-        },
-        'c': function() {
-            $('#clear').click();
-        }
-    });
+//     $(document).shortkeys({
+//         'e': function() {
+//             $('#eraser').click();
+//         },
+//         'c': function() {
+//             $('#clear').click();
+//         }
+//     });
 });
