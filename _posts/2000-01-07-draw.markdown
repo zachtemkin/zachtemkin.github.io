@@ -8,7 +8,7 @@ brief: "An experiment in constraints, Draw is a space where users can create art
 roles: "Design; Front-end Development"
 categories: portfolio
 appendix:
-- {link: "http://zachtemkin.us/lab/draw", text: "live site"}
+- {link: "/lab/draw", rel: true, text: "live site"}
 ---
 
 Draw is a self-initiated project I worked on over the summer of 2012 to teach myself HTML, CSS and jQuery.
