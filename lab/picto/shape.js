@@ -1,14 +1,5 @@
 $(document).ready(function() {
 
-    // web app banner
-
-    $().smartWebBanner({
-     title: "Pictograph",
-        showFree: false,
-    });
-
-
-
     // animate text entry
 
     $("#pictoname").animate({'opacity':1}, 1000, 'swing', function() {

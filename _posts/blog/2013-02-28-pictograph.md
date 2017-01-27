@@ -12,8 +12,9 @@ I have been thinking about implementing a feature where a user can add a name 
 
 {%
 	include zt-button.html
-	link = "http://zachtemkin.us/lab/picto/"
+	link = "/lab/picto/"
 	dir = "right"
 	text = "picto"
+	rel="true"
 	featured = true
 %}
