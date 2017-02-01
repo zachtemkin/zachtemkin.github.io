@@ -50,35 +50,35 @@ img {
     background-color: #c44d4d;
 }
 #i .door {
-    background-image: url(../../resources/door1.png);
+    background-image: url(../door/resources/door1.png);
 }
 
 #ii {
     background-color: #f3d3d0;
 }
 #ii .door {
-    background-image: url(../../resources/door2.png);
+    background-image: url(../door/resources/door2.png);
 }
 
 #iii {
     background-color: #dd8558;
 }
 #iii .door {
-    background-image: url(../../resources/door3.png);
+    background-image: url(../door/resources/door3.png);
 }
 
 #iv {
     background-color: #999998;
 }
 #iv .door {
-    background-image: url(../../resources/door4.png);
+    background-image: url(../door/resources/door4.png);
 }
 
 #v {
     background-color: #B67C82;
 }
 #v .door {
-    background-image: url(../../resources/door5.png); 
+    background-image: url(../door/resources/door5.png);
 }
 
 @media screen and (max-width: 537px) {
