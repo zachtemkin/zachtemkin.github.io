@@ -76,12 +76,16 @@
   margin: .5rem auto 0;
 
   p {
+    @include breakpoint(screen-sm) {
+      width: 75%;
+    }
+
     @include font(san-serif);
     color: darken($cool-gray-light, 30%);
     font-size: 1rem;
     line-height: 200%;
     margin: 0;
     padding: .5rem 0 0 1rem;
-    width: 75%;
+    width: 100%;
   }
 }
