@@ -39,6 +39,7 @@
   text-align: center;
 
   @include breakpoint(screen-sm) {
+    align-items: flex-end;
     display: flex;
   }
 
