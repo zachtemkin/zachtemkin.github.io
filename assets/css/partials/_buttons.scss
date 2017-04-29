@@ -63,7 +63,7 @@
     }
 
     @include breakpoint(screen-sm) {
-      padding: 10px 15px 12px;
+      padding: 10px 1px 12px;
 
       &::after {
         padding: 10px 15px 12px;

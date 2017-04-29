@@ -7,7 +7,7 @@
   &--featured {
     @include breakpoint(screen-sm) {
       max-width: 90%;
-      width: 1080px;
+      width: 960px;
     }
   }
 
@@ -84,7 +84,7 @@
     @include font(san-serif);
     color: darken($cool-gray-light, 30%);
     font-size: 1rem;
-    line-height: 200%;
+    line-height: 1.7;
     margin: 0;
     padding: .5rem 0 0 1rem;
     width: 100%;

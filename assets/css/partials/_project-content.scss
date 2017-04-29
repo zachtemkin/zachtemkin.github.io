@@ -39,7 +39,7 @@
     color: darken($cool-gray-light, 40%);
     font-size: 1.5em;
     font-weight: 700;
-    margin: 0 auto .25em;
+    margin: 0 auto .5em;
   }
 
   h4 {
@@ -48,17 +48,23 @@
     font-size: 1.75em;
     font-weight: 500;
     margin: 0 auto .5em;
+    text-decoration: underline;
   }
 
   p {
     @include content-column;
     @include font(secondary);
-    font-size: 1.125rem;
+    font-size: 1.3125em;
     margin: 0 auto 1.25em;
 
     @include breakpoint(screen-sm) {
-      line-height: 2em;
+      line-height: 1.7;
     }
+  }
+
+  .multi-button-container {
+    width: 90%;
+    max-width: 960px;
   }
 
   blockquote {
@@ -75,8 +81,8 @@
 
     > p {
       @include font(primary);
-      color: $cool-gray-med;
-      font-size: 1.25em;
+      color: lighten($cool-gray-med, 10%);
+      font-size: 1.75em;
       line-height: 1.6;
       margin: 0;
       max-width: 100%;

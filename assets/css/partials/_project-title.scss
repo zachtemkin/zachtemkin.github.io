@@ -1,14 +1,19 @@
 .title {
+  &--home {
+    margin: 1.5em 0 .625em;
+    text-align: left; 
+  }
+
   @include content-column;
-  margin: .5em auto 1.5em;
+  margin: 3em auto 3.5em;
   text-align: center;
 
   h1 {
-    border-bottom: 2px solid $zt-red;
+    // border-bottom: 2px solid $zt-red;
     display: inline-block;
 
     @include breakpoint(screen-sm) {
-      width: 70%;
+      // width: 70%;
     }
   }
 

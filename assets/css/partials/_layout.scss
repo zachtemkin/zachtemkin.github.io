@@ -9,8 +9,11 @@ body {
   color: $dark-gray;
   height: 100%;
   padding: 5px;
+  font-size: 90%;
+
   @include breakpoint(screen-sm) {
     padding: 5px;
+    font-size: 100%;
   }
 }
 
@@ -51,7 +54,7 @@ img {
 .inner {
   @include clearfix;
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
   @include breakpoint(screen-md) {
     max-width: 1280px;
     width: 960px;
