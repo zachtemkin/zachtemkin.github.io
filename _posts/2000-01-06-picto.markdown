@@ -5,10 +5,11 @@ ID: "picto"
 img: "/assets/img/thumbnails/picto-thumb.png"
 imgBg: true
 brief: "An experiment on meditative play, users click or touch each of the four quadrants of a square to change the shape of that quadrant and make a new shape out of the whole. The shapes that can be made are simple yet very interpretive."
-roles: "Design; Front-end development"
+roles: "Design/ Front-end development"
 categories: portfolio
 appendix:
 - {link: "/lab/picto", rel: true, text: "live site"}
+color: "#7af5b1"
 ---
 
 I made Picto as an experiment on meditative play. Users click or touch each of the four quadrants of a square to change the shape of that quadrant and make a new shape out of the whole. The shapes that can be made are simple yet very interpretive. Users can name the shape they create by typing in the text box on the top of the screen. Picto gets users thinking about shapes in new ways and has animations that give it a satisfying, game-like feel.

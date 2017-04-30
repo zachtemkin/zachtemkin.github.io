@@ -5,8 +5,9 @@ ID: "ww"
 img: "/assets/img/thumbnails/ww-thumb.png"
 imgBg: true
 brief: "Showcase the value of Watson language processing APIs through a translation experience on a mobile device."
-roles: "Ux Design; Prototyping; User Research"
+roles: "Ux Design/ Prototyping/ User Research"
 categories: portfolio
+color: "#5aaafa"
 ---
 
 In the fall of 2015 I participated in a 12 week design bootcamp as part of my on-boarding to IBM Design. For the first three weeks, I was on a team assigned to create a proof of concept that showcased the value of IBM’s Watson language processing APIs.

@@ -5,16 +5,9 @@
 }
 
 body {
-  background-color: $zt-purple;
+  background-color: #f8f8fa;
   color: $dark-gray;
   height: 100%;
-  padding: 5px;
-  font-size: 90%;
-
-  @include breakpoint(screen-sm) {
-    padding: 5px;
-    font-size: 100%;
-  }
 }
 
 a {
@@ -42,13 +35,6 @@ img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
-}
-
-.wrapper {
-  background-color: $white;
-  height: auto;
-  overflow: hidden;
-  width: 100%;
 }
 
 .inner {

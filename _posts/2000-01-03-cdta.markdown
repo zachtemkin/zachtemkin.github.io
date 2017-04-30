@@ -9,6 +9,7 @@ roles: "User interface design"
 categories: portfolio
 appendix:
 - {link: "/assets/CDTA-analysis.pdf", rel: true, text: "view the design doc"}
+color: "#0071bc"
 ---
 
 In the winter of 2013 I was recruited by Troy Web Consulting to help respond to a request for proposal for a redesign of the web experience for the Capital District Transportation Authority. I worked with one other designer, Trevor Phillippi and mostly owned work on the design of the mobile experience.

@@ -5,7 +5,7 @@ ID: "mountain"
 img: "/assets/img/thumbnails/mountain-thumb.png"
 photo-img: true
 brief: "Concept art for Mountain the Game, an explorative platformer about a journey up a mountain."
-roles: "Art direction; Asset creation"
+roles: "Art direction/ Asset creation"
 categories: portfolio
 ---
 

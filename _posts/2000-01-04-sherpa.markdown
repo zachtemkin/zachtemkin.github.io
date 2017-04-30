@@ -5,8 +5,9 @@ ID: "sherpa"
 img: "/assets/img/thumbnails/sherpa-thumb.png"
 imgBg: true
 brief: "A web-app connecting prospective students with current college students, to provide a genuine account of the student experience."
-roles: "User interface design; Visual design; Front-end development"
+roles: "User interface design/ Visual design/ Front-end development"
 categories: portfolio
+color: "#22b573"
 ---
 
 ## Y-Hack 2013

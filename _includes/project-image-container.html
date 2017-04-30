@@ -4,7 +4,7 @@
   <div class="images {% if include.hasBackground %}images--has-background{% endif %}">
     {% for image in imageNames %}
     <div class="image-wrapper {% if include.border %}border{% endif %}">
-  		<img class="lazy" data-original="{{ image | prepend: site.github.url }}">
+  		<img class="lazy" data-original="{{ image | prepend: site.github.url }}" style="{% if include.hasBackground %}background-color: {{include.color}}{% endif %}">
     </div>
     {% endfor %}
   </div>

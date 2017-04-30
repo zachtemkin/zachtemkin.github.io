@@ -5,10 +5,11 @@ ID: "draw"
 img: "/assets/img/thumbnails/draw-thumb.png"
 imgBg: true
 brief: "An experiment in constraints, Draw is a space where users can create artwork by drawing, or building works of art with a limited number of randomly colored shapes."
-roles: "Design; Front-end Development"
+roles: "Design/ Front-end Development"
 categories: portfolio
 appendix:
 - {link: "/lab/draw", rel: true, text: "live site"}
+color: "#8586a1"
 ---
 
 Draw is a self-initiated project I worked on over the summer of 2012 to teach myself HTML, CSS and jQuery.

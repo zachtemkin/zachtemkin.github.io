@@ -1,124 +1,127 @@
 .project-list {
-  // background-color: $zt-purple;
-  margin-top: 1.5em;
+  margin: 0 auto 4em;
+  max-width: 960px;
   overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .project-preview {
-  background-color: $white;
-  border-bottom: 1px solid $cool-gray-light;
-  // margin: 5px auto 0;
-  margin-bottom: 3rem;
-  min-height: 320px;
+  @include breakpoint(screen-sm) {
+    font-size: 100%;
+    height: 320px;
+  }
+  
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 85%;
+  margin-bottom: 1.5rem;
   overflow: hidden;
   position: relative;
   width: 100%;
 
-  @include breakpoint(screen-sm) {
-    border-bottom: 0;
-    border-top: 1px solid $cool-gray-light;
-    display: block;
-    margin: 0;
-    width: 100%;
-  }
-
-  &:hover {
-    .img-wrapper {
-      background-color: lighten($cool-gray-light, 5%);
-    }
-  }
-
   .img-wrapper {
-    background-color: lighten($cool-gray-light, 5%);
-    display: block;
-    overflow: hidden;
-    transition: background-color .4s ease-in-out;
-    width: 100%;
-
     @include breakpoint(screen-sm) {
-      background-color: transparent;
       bottom: 0;
-      left: 50%;
+      left: 22.75rem;
+      max-height: 320px;
       position: absolute;
       top: 0;
-      width: 50%;
+      width: calc(100% - 22.75em);
     }
+    
+    align-items: center;
+    background-color: $cool-gray-dark;
+    display: flex;
+    justify-content: center;
+    max-height: 280px;
+    overflow: hidden;
+    width: 100%;
 
-    &--photo-img {
+    &:hover {
       img {
-        padding: 10px 15px 0;
-
-        @include breakpoint(screen-sm) {
-          padding: 2.5em;
-        }
+        transform: scale(1.1);
       }
     }
 
     img {
-      margin: auto;
-      overflow: hidden;
-      transition: background-color .2s ease-in-out;
-      z-index: 0;
+      max-height: none;
+      max-width: 420px;
+      height: auto;
+      transform: scale(1);
+      transition: .2s transform ease-in-out;
+      width: 100%;
+    }
 
-      @include breakpoint(screen-sm) {
-        bottom: 0;
-        position: absolute;
-        top: 0;
+    &--photo-img {
+      img {
+        @include breakpoint(screen-sm) {
+          height: 100%;
+          max-width: none;
+          width: auto;
+        }
+
+        @include breakpoint(screen-md) {
+          height: auto;
+          max-width: none;
+          width: 100%;
+        }
+
+        height: auto;
+        max-width: none;
+        width: 100%;
       }
     }
   }
 
   .info {
     @include breakpoint(screen-sm) {
-      // margin-left: 50%;
-      padding: 1.25em 1em;
-      width: 45%;
-    }
-    @include breakpoint(screen-md) {
-      font-size: 100%;
+      min-height: 320px;
+      width: 22.75rem;
     }
 
-    font-size: 90%;
+    background-color: $white;
     overflow: hidden;
-    padding: 1.5em 2em;
+    padding: 1.125rem 1.5rem;
     z-index: 100;
 
     h3 {
-      color: $zt-red;
       font-size: 1.75em;
       font-weight: 700;
       letter-spacing: .02em;
-      line-height: 100%;
-      margin-bottom: .625em;
-    }
-
-    .brief {
-      @include font(serif);
-      color: darken($cool-gray-light, 75%);
-      font-size: 1.125rem;
-      font-weight: 500;
-      letter-spacing: .02em;
-      line-height: 150%;
-      margin: 0;
-    }
-
-    hr {
-      border: 0;
-      border-top: 1px solid $cool-gray-light;
-      margin: .625em 0;
-      width: 100%;
+      line-height: 2rem;
+      margin-bottom: .5em;
     }
 
     .roles {
       @include font(san-serif);
+      color: $cool-gray-dark;
+      font-size: .875em;
+      font-weight: 700;
+      line-height: 1.25em;
+      margin: 0 0 1.3125em;
+      max-width: 85%;
+    }
+    
+    .brief {
+      @include font(serif);
       color: darken($cool-gray-light, 40%);
       font-size: 1em;
       font-weight: 500;
-      margin: 0;
+      letter-spacing: .02em;
+      line-height: 150%;
+      margin: 0 0 1em;
     }
 
      > .zt-button {
-      margin: 1.125em 0;
+      @include breakpoint(screen-sm) {
+        bottom: .25em;
+        position: absolute;
+      }
+      
+      font-size: 1.5em;
+      padding-left: 0;
+      text-align: left;
     }
   }
 }

@@ -4,8 +4,9 @@ title: "iQube"
 ID: "iqube"
 img: "/assets/img/thumbnails/iqube-thumb.png"
 brief: "An interactive puzzle platform for children that helps foster mental agility and problem solving skills."
-roles: "User research; Physical prototyping; User testing; Arduino programming"
+roles: "User research/ Physical prototyping/ User testing/ Arduino programming"
 categories: portfolio
+color: "#f65c62"
 ---
 
 ## The Project

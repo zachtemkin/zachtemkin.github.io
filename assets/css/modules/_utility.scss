@@ -1,9 +1,9 @@
 //breakpoints
 @mixin breakpoint($point) {
   @if $point == screen-md {
-    @media screen and (min-width: 1024px) { @content; }
+    @media screen and (min-width: 950px) { @content; }
   } @else if $point == screen-sm {
-    @media screen and (min-width: 768px) { @content; }
+    @media screen and (min-width: 720px) { @content; }
   }
 }
 
