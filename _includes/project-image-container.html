@@ -1,6 +1,6 @@
 {% assign imageNames = include.images | split: ', ' %}
 
-<div class="project-image-block {% if include.featured %}project-image-block--featured{% endif %} {% if include.side-caption %}project-image-block--side-caption{% endif %}">
+<div class="project-image-block {% if include.featured %}project-image-block--featured{% endif %} {% if include.side-caption %}project-image-block--side-caption{% endif %}{% if include.thumbnail %}thumbnail{% endif %}">
   <div class="images {% if include.hasBackground %}images--has-background{% endif %}">
     {% for image in imageNames %}
     <div class="image-wrapper {% if include.border %}border{% endif %}">

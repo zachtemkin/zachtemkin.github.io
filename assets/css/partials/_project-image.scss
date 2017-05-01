@@ -1,22 +1,15 @@
-.project-content > .project-image-block {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  max-height: 400px;
-}
-
-.project-content > .project-image-block ~ .project-image-block {
-  align-items: none;
-  display: block;
-  justify-content: none;
-  max-height: none;
-}
-
 .project-image-block {
   @include content-column;
   display: block;
   margin: 2rem auto;
+  max-width: 100%;
   overflow: hidden;
+
+  &.thumbnail {
+    align-items: center;
+    display: flex;
+    max-height: 480px;
+  }
 
   &--featured {
     @include breakpoint(screen-sm) {
