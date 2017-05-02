@@ -17,15 +17,15 @@
   margin: 1.5rem auto 0;
   max-width: 960px;
   overflow: hidden;
-  width: 90%;
+  width: 100%;
 }
 
 .post-preview {
-  // background-color: $white;
-  border-top: 1px solid $cool-gray-light;
+  background-color: $white;
   display: flex;
   flex-flow: column nowrap;
   overflow: hidden;
+  margin-bottom: 1.5rem;
   position: relative;
   width: 100%;
 
@@ -33,22 +33,20 @@
     flex-flow: row wrap;
   }
 
-  &:last-child {
-    border-bottom: 1px solid $cool-gray-light;
-    margin-bottom: 2rem;
-  }
-
   .content-preview {
     align-items: center;
+    background-color: $cool-gray-light;
     display: flex;
-    height: 10rem;
-    margin: 1rem 0;
+    height: 15rem;
     overflow: hidden;
-    padding: 1rem 0;
     width: 100%;
 
     @include breakpoint(screen-sm) {
-      width: 50%;
+      width: 60%;
+    }
+
+    &:hover {
+      // transform: scale(1.1);
     }
 
     p {
@@ -97,24 +95,24 @@
   }
 
   .info {
+    background-color: $white;
     font-size: 90%;
     overflow: hidden;
-    padding: 0 0 1.25em;
+    padding: 1.25em 0 1.25em 1.25em;
     width: 100%;
     z-index: 100;
 
     @include breakpoint(screen-sm) {
       font-size: 100%;
-      padding: 1.25em 0 1.25em 1.25em;
-      width: 50%;
+      width: 40%;
     }
 
     h3 {
-      color: $zt-red;
+      color: $cool-gray-dark;
+      font-size: 1.75em;
       font-weight: 700;
       letter-spacing: .02em;
       line-height: 100%;
-      margin-bottom: .5rem;
 
       @include breakpoint(screen-sm) {
         font-size: 1.5em;
@@ -123,9 +121,8 @@
 
     .date {
       @include font(san-serif);
-      border-top: 1px solid $cool-gray-light;
       color: darken($cool-gray-light, 75%);
-      font-size: .85rem;
+      font-size: .875em;
       font-weight: 700;
       margin: 0;
       max-width: 50%;
@@ -136,7 +133,8 @@
     .tags {
       display: flex;
       justify-content: left;
-      margin-top: 1rem;
+      margin-bottom: 1em;
+      margin-top: 1em;
     }
 
     .tag {
@@ -185,24 +183,11 @@
   }
 
   .zt-button {
-    color: $zt-red;
-    display: inline-block;
-    font-size: 1.5rem;
-    font-variant: normal;
-    padding: 0;
-    text-align: left;
-    text-transform: capitalize;
-
-    &::after {
-      padding: 0;
+    @include breakpoint(screen-sm) {
+      bottom: 0;
+      position: absolute;
     }
-
-    &:hover {
-      padding-right: 2.5em;
-
-      &::after {
-        color: $zt-red;
-      }
-    }
+    
+    padding-left: 0;
   }
 }
