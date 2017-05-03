@@ -13,11 +13,11 @@
 
   &:not(:last-child) {
     border-bottom: 1px solid $cool-gray-light;
-    border-top: 1px solid $cool-gray-light;
+  }
 
-    @include breakpoint(screen-sm) {
-      border-top: 0;
-    }
+  &:last-child {
+    border-top: 1px solid $cool-gray-light;
+    margin-top: 4rem;
   }
 
   &.blog-home {

@@ -12,7 +12,7 @@ Doors of Troy“Doors of Troy” is an illustration series in which I will explo
 
 {%
 	include zt-button.html
-	link = "http://zachtemkin.us/lab/door"
+	link = "http://zach.coffee/lab/door"
 	text = "doors of troy"
 	dir = "right"
 	featured = true
