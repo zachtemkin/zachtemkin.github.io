@@ -15,7 +15,6 @@ layout: default
         relUrl = true
         textButton = true
       %}
-      <!-- <span>&bull;</span> -->
     {% endif %}
     {%
       include zt-button.html
@@ -25,7 +24,6 @@ layout: default
       textButton = true
     %}
     {% if page.next.url %}
-      <!-- <span>&bull;</span> -->
       {%
         include zt-button.html
         dir = "right"
@@ -62,8 +60,6 @@ layout: default
   %}
    
   {{ content }}
-
-  <!-- <hr class="fin"/> -->
   
   <p class="pagination multi-button-container">
     {% if page.previous.url %}
@@ -75,7 +71,6 @@ layout: default
         relUrl = true
         textButton = true
       %}
-      <!-- <span>&bull;</span> -->
     {% endif %}
     {%
       include zt-button.html
@@ -85,7 +80,6 @@ layout: default
       textButton = true
     %}
     {% if page.next.url %}
-      <!-- <span>&bull;</span> -->
       {%
         include zt-button.html
         dir = "right"
