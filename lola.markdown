@@ -29,6 +29,8 @@ Lola gets one _pack of wet food per day_. For dry food just _top off_ her other 
 
 If you run out of dry food there is a huge bag on the bottom shelf of the tall cuppord on the right of the kitchen enterance. 
 
+Inside the food drawer, you'll also see a few puches of treats. There's a pouch of _Pet Naturals Calming Treats_. Leave one of these in her dry food bowl. You can give her a few of the normal treats too, she'll thank ya.
+
 ## Scooping the Poops &#57434;
 
 Lola and I are both VERY appreciative of this. You'll find the litter box in my bedroom, at the back of the apartment.
