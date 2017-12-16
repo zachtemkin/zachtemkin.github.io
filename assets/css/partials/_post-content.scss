@@ -3,6 +3,10 @@
   margin-top: 2rem;
   padding-bottom: .5rem;
 
+  &--basic {
+    padding-top: 2rem;
+  }
+
   @include breakpoint(screen-sm) {
     margin-top: 1.5rem;
   }
