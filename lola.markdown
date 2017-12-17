@@ -25,7 +25,12 @@ Note: the lights should go on and off on their own but if you want to adjust to 
 
 You'll find all Ms.Mitten's food in the bottom drawer at the back of the kitchen, under the window. Dry food is in a tupperware container and wet food is in pouches in the drawer. 
 
-Lola gets one _pack of wet food per day_. For dry food just _top off_ her other dish. If it's completely empty you don't need to fill it all the way (I think she's getting kina fat :3)
+Lola gets:
+
+- one pack of wet food per day
+- For dry food just top off her dish
+  - If it's completely empty you don't need to fill it all the way (I think she's getting kina fat :3)
+- Rinse and refill water bowl from the tap 
 
 If you run out of dry food there is a huge bag on the bottom shelf of the tall cuppord on the right of the kitchen enterance. 
 
@@ -64,8 +69,6 @@ PW: _"by permit only"_
 
 ### Television
 You should be able to just turn on the TV with the Samsung remote but, if not, using the long, Yamaha remote, make sure the reciever is turned on and set to "HDMI 2". Then you can use the Samsung remote to control thr TV normally. Netflix and Hulu are all set up.
-
-I think I'm going to leave the couch covered with a blanket just in case she gets a little scratchy but if you wanna chill you can move it ¯\_(ツ)_/¯ 
 
 ### That's it!
 
