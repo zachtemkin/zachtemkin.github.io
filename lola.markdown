@@ -52,6 +52,10 @@ Now, to open the litter box, first remove the scooper. Then, press in on the lat
 
 Ok... I think you know what's next... we're all cat people. On your way out you can throw the poops down the trash chute in the hallway. Youll find it on the wall opposite the elevators behind a door (the only door without a lock).
 
+## Plants are people too!
+
+While you're in my room if you wouldn't mind giving the plant by the window some water, you'll find the spray bottle on the windowsill. I usually give it 10 or so spays every day.
+
 Phew... now for the fun part!
 
 ## Loving the fur ball
